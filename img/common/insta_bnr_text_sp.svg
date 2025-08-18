@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302.616" height="45.781" viewBox="0 0 302.616 45.781">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_5092" data-name="長方形 5092" width="43.049" height="43.782" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_7278" data-name="グループ 7278" transform="translate(-35.109 -4346.609)">
+    <text id="Instagram公式アカウント" transform="translate(92 4386.391)" fill="#fff" font-size="20" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="0" y="0">Instagram</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">公式アカウント</tspan></text>
+    <g id="グループ_6992" data-name="グループ 6992" transform="translate(35.109 4346.609)">
+      <g id="グループ_6991" data-name="グループ 6991" clip-path="url(#clip-path)">
+        <path id="パス_9688" data-name="パス 9688" d="M30.676,0h-18.3A12.373,12.373,0,0,0,0,12.373V31.409A12.373,12.373,0,0,0,12.372,43.781h18.3A12.373,12.373,0,0,0,43.048,31.409V12.373A12.373,12.373,0,0,0,30.676,0M4.392,12.373a7.989,7.989,0,0,1,7.98-7.98h18.3a7.989,7.989,0,0,1,7.98,7.98V31.409a7.989,7.989,0,0,1-7.98,7.98h-18.3a7.989,7.989,0,0,1-7.98-7.98Z" transform="translate(0.001)" fill="#fff"/>
+        <path id="パス_9689" data-name="パス 9689" d="M71.208,84.623A11.275,11.275,0,1,0,59.933,73.348,11.288,11.288,0,0,0,71.208,84.623m0-19.036a7.761,7.761,0,1,1-7.76,7.761,7.769,7.769,0,0,1,7.76-7.761" transform="translate(-49.683 -51.457)" fill="#fff"/>
+        <path id="パス_9690" data-name="パス 9690" d="M181.469,45.378a2.526,2.526,0,1,1-2.526,2.526,2.526,2.526,0,0,1,2.526-2.526" transform="translate(-148.34 -37.617)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="グループ_7020" data-name="グループ 7020" transform="translate(-527 -429.891)">
+      <text id="お得な情報や買取実績を掲載しています" transform="translate(633.5 4789.5)" fill="#fff" font-size="12" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="0">お得な情報や買取実績を掲載しています</tspan></text>
+      <g id="グループ_7018" data-name="グループ 7018" transform="translate(617.272 4778.502)">
+        <rect id="長方形_5106" data-name="長方形 5106" width="0.687" height="15.936" transform="translate(0.002 0.426) rotate(-38.541)" fill="#fff"/>
+        <rect id="長方形_5107" data-name="長方形 5107" width="0.687" height="9.234" transform="translate(6.453 3.218) rotate(-30.563)" fill="#fff"/>
+      </g>
+      <g id="グループ_7019" data-name="グループ 7019" transform="translate(852.988 4778.5)">
+        <rect id="長方形_5106-2" data-name="長方形 5106" width="0.687" height="15.936" transform="translate(1.809 12.892) rotate(-141.459)" fill="#fff"/>
+        <rect id="長方形_5107-2" data-name="長方形 5107" width="0.687" height="9.234" transform="translate(0.592 11.171) rotate(-149.437)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

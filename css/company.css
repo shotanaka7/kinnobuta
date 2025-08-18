@@ -1,0 +1,137 @@
+/*============================
+MV
+============================*/
+#mv {
+	background-image: url(../img/company/mv_pc.jpg);
+}
+
+/*============================
+会社概要
+============================*/
+#company {
+	margin-bottom: 0.80rem;
+}
+
+#company .company_table {
+	padding: 0.20rem 0 0.50rem;
+}
+
+#company .company_table table {
+	width: 100%;
+	border-collapse:collapse;
+	font-size: 0.16rem;
+	border-top: 1px solid #5FC1AA;
+}
+@media screen and (max-width: 599px) {
+	#company .company_table table {
+		font-size: 0.14rem;
+	}
+}
+
+
+#company .company_table table .title {
+	width: 2.00rem;
+	box-sizing: border-box;
+	padding: 0.20rem 0.15rem;
+	text-align: left;
+	background-color: #EFF9F6;
+	border-bottom: 1px solid #5FC1AA;
+	letter-spacing: 0.05em;
+}
+@media screen and (max-width: 599px) {
+	#company .company_table table .title {
+		width: 100%;
+		display: block;
+		padding: 0.15rem;
+	}
+}
+
+
+#company .company_table table .text {
+	box-sizing: border-box;
+	padding: 0.20rem 0.15rem;
+	text-align: left;
+	border-bottom: 1px solid #5FC1AA;
+	letter-spacing: 0.05em;
+}
+@media screen and (max-width: 599px) {
+	#company .company_table table .text {
+		width: 100%;
+		display: block;
+		padding: 0.15rem;
+		line-height: 1.65;
+	}
+}
+
+
+#company .gmap {
+	width: 100%;
+	height: 5.00rem;
+}
+
+#company .gmap iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/*============================
+プライバシーポリシー・ご利用規約
+============================*/
+#privacy, #terms {
+	padding-bottom: 0.80rem;
+}
+
+#privacy .lead {
+	text-align: center;
+	font-size: 0.16rem;
+	line-height: 1.75;
+	padding-top: 0.30rem;
+}
+@media screen and (max-width: 599px) {
+	#privacy .lead {
+		text-align: center;
+		font-size: 0.14rem;
+	}
+}
+
+
+.policy_box {
+	padding-top: 0.40rem;
+}
+
+.policy_box .title {
+	font-size: 0.18rem;
+	font-weight: 700;
+	padding-bottom: 0.15rem;
+	margin-bottom: 0.15rem;
+	border-bottom: 1px solid #999;
+}
+@media screen and (max-width: 599px) {
+	.policy_box .title {
+		font-size: 0.16rem;
+	}
+}
+
+.policy_box .text {
+	font-size: 0.16rem;
+	line-height: 1.85;
+	letter-spacing: 0.05em;
+	text-align: justify;
+}
+@media screen and (max-width: 599px) {
+	.policy_box .text {
+		font-size: 0.14rem;
+	}
+}
+
+.policy_box .list .text {
+list-style: disc outside;
+margin-left: 0.14rem;
+}
+
+.policy_box .sub_title {
+	font-size: 0.16rem;
+	padding-top: 0.15rem;
+	font-weight: 700;
+	line-height: 1.85;
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="">
+
+<head>
+
+	<?php require('header.php'); ?>
+	<title>お問い合わせ</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lower_common.css?=<?php echo date('YmdHi'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/form.css?=<?php echo date('YmdHi'); ?>">
+
+
+</head>
+
+<body id="top">
+
+	<?php require('inc/page_header.php'); ?>
+
+	<main>
+
+		<section id="mv" class="contact">
+		<h2 class="title">お問い合わせ</h2>
+		<span>CONTACT</span>
+		</section>
+
+		<div class="in">
+			<section id="all_cont_wrapper">
+
+				<!-- サイドバー -->
+				<section id="sidebar">
+					<?php require('inc/sidebar.php'); ?>
+				</section>
+				<!-- サイドバー -->
+
+				<!-- メインコンテンツ -->
+				<section id="main_cont">
+					
+					<!--パンくず-->
+					<div class="pankuz">
+						<ul class="list">
+							<li class="item"><a href="/">ホーム</a></li>
+							<li class="item">お問い合わせ</li>
+						</ul>
+					</div>
+					<!--/パンくず-->
+
+					<!--お電話での買取・相談-->
+					<div id="contact_tel">
+						<div class="tel_img"><img src="<?php echo get_template_directory_uri(); ?>/img/contact/tel_text.svg" alt="お電話での買取・相談"></div>
+					</div>
+					<!--/お電話での買取・相談-->
+
+					<!--フォーム-->
+					<div class="contact_form">
+						<h2 class="sec_title"><span>お問い合わせ</span></h2>
+						<p class="lead">当サイトでは、実在性の証明とプライバシー保護のため、SSL暗号化通信を実現しています。<br>個人情報の取り扱いについては<a href="page-company.php#tab2" target="_blank">プライバシーポリシー</a>をご覧ください。</p>
+
+						<div class="form_table">
+							<?php echo do_shortcode('[mwform_formkey key="127"]'); ?>
+						</div>
+					</div>
+					<!--/フォーム-->
+
+		<?php require('inc/module_standard.php'); ?>
+		<?php require('footer.php'); ?>
+
+</body>
+</html>
+
+
+

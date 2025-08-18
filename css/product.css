@@ -1,0 +1,290 @@
+/*============================
+MV
+============================*/
+#mv {
+	background-image: url(../img/product/mv_bg.jpg);
+}
+
+/*============================
+商品情報
+============================*/
+#info {
+	margin-bottom: 1.00rem;
+}
+
+#info .info_title {
+	font-size: 0.28rem;
+	font-weight: bold;
+	color: #fff;
+	background: #5FC1AA;
+	padding: 0.10rem 0.20rem;
+	display: flex;
+	align-items: center;
+}
+
+#info .info_title span {
+	font-size: 0.20rem;
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 0.1rem 0.15rem;
+	border-radius: 0.05rem;
+	margin-right: 0.20rem;
+}
+
+/* コンテンツ */
+#info .cont_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 0.30rem;
+	align-items: center;
+}
+
+#info .cont_wrap .ph_wrap {
+	width: 4.20rem;
+}
+
+
+#info .cont_wrap .text_wrap {
+	width: calc(100% - 4.20rem);
+	box-sizing: border-box;
+	padding-left: 0.30rem;
+}
+
+
+/* 買取価格 */
+#info .cont_wrap .text_wrap .kakaku_title{
+	font-size: 0.22rem;
+	font-weight: bold;
+	color: #E86573;
+	text-align: center;
+	margin-bottom: 0.20rem;
+}
+
+#info .cont_wrap .text_wrap table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#info .cont_wrap .text_wrap table tr {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+
+#info .cont_wrap .text_wrap table tr:first-child {
+	border-top: 1px solid #ccc;
+}
+
+
+#info .cont_wrap .text_wrap table th {
+	width: 40%;
+	text-align: left;
+	background: #EEEEEE;
+	font-size: 0.20rem;
+	font-weight: bold;
+	padding: 0.2rem;
+}
+
+#info .cont_wrap .text_wrap table td {
+	width: 60%;
+	font-size: 0.32rem;
+	font-weight: bold;
+	padding: 0.2rem;
+	color: #E86573;
+	text-align: right;
+}
+
+/* 取扱なし */
+#info .cont_wrap .text_wrap .toriatukai {
+	font-size: 0.22rem;
+	font-weight: bold;
+	padding: 0.20rem 0;
+	letter-spacing: 0.05em;
+}
+
+#info .cont_wrap .text_wrap .text {
+	font-size: 0.14rem;
+	line-height: 1.75;
+	letter-spacing: 0.05em;
+}
+
+/*============================
+ポイント
+============================*/
+#point {
+
+}
+
+#point .point_wrap {
+	display: flex;
+	background: #E86573;
+	box-sizing: border-box;
+	padding: 0.15rem;
+}
+
+#point .point_wrap .ph_wrap {
+	width: 3.20rem;
+}
+
+#point .point_wrap .ph_wrap img {
+	width: 100%;
+}
+
+#point .point_wrap .text_wrap {
+	width: calc(100% - 3.20rem);
+	box-sizing: border-box;
+	padding-left: 15px;
+	color: #fff;
+}
+
+#point .point_wrap .text_wrap .title {
+	font-size: 0.26rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.20rem;
+
+}
+
+#point .point_wrap .text_wrap .title::before {
+	content: '';
+	display: inline-block;
+	width: 0.34rem;
+	height: 0.57rem;
+	background: url(../img/product/point_icon_hand.svg) no-repeat center;
+	background-size: contain;
+	padding-right: 0.20rem;
+}
+
+#point .point_wrap .text_wrap .list {
+
+}
+
+#point .point_wrap .text_wrap .list .item {
+	font-size: 0.22rem;
+	font-weight: bold;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	padding-left: 0.22rem;
+	text-indent: -0.22rem;
+}
+
+#point .point_wrap .text_wrap .list .item::before {
+	content: '';
+	display: inline-block;
+	width: 0.20rem;
+	height: 0.20rem;
+	background: url(../img/product/icon_check.svg) no-repeat center;
+	background-size: contain;
+	padding-right: 0.10rem;
+}
+
+#point .point_wrap .text_wrap small {
+	font-size: 0.13rem;
+	line-height: 2;
+	padding-left: 0.13rem;
+	text-indent: -0.13rem;
+	display: block;
+	margin-top: 0.20rem;
+}
+
+/*============================
+QA
+============================*/
+#qa {
+	margin-top: 1.00rem;
+}
+
+.qa_wrap {
+
+}
+
+/* タイトル */
+.qa_wrap .title {
+	font-size: 0.22rem;
+	font-weight: bold;
+	background: #5FC1AA;
+	color: #fff;
+	text-align: center;
+	padding: 0.15rem 0.20rem;
+	box-sizing: border-box;
+}
+
+.qa_wrap .qa_box {
+	background: #E7F6F3;
+	box-sizing: border-box;
+	border-bottom: 1px solid #5FC1AA;
+}
+
+/* Q */
+.qa_wrap .qa_box .q_cont{
+	font-size: 0.18rem;
+	font-weight: bold;
+	position: relative;
+	display: flex;
+	padding: 0.25rem 0.50rem 0.20rem 0.20rem;
+}
+
+.qa_wrap .qa_box .q_cont::before{
+	content: 'Q';
+	font-size: 0.25rem;
+	font-weight: bold;
+	color: #5FC1AA;
+	display: inline-block;
+	padding-right: 0.15rem;
+	position: relative;
+	top: -0.05rem;
+}
+
+.qa_wrap .qa_box .q_cont:hover{
+	opacity: 0.7;
+}
+
+
+
+.qa_wrap .qa_box .q_cont::after {
+    content: "";
+    width: 0.13rem;
+    height: 0.1rem;
+    background-image: url(../img/common/sidenav_arrow_bottom.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0.35rem;
+    top: 0.3rem;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.qa_wrap .qa_box .q_cont.open::after {
+    transform: rotate(180deg);
+}
+
+/* A */
+.qa_wrap .qa_box .a_cont {
+	display: none;
+	padding: 0 0.50rem 0.20rem 0.20rem;
+}
+
+.qa_wrap .qa_box .a_cont .text{
+	font-size: 0.16rem;
+	position: relative;
+	display: flex;
+	line-height: 1.65;
+}
+
+.qa_wrap .qa_box .a_cont .text::before{
+	content: 'A';
+	font-size: 0.25rem;
+	font-weight: bold;
+	color: #E86573;
+	display: inline-block;
+	padding-right: 0.15rem;
+	position: relative;
+	top: -0.05rem;
+}

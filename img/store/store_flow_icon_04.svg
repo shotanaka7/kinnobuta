@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="グループ_6840" data-name="グループ 6840" transform="translate(-1507 -2767)">
+    <rect id="長方形_5030" data-name="長方形 5030" width="100" height="100" transform="translate(1507 2767)" fill="none"/>
+    <g id="グループ_6839" data-name="グループ 6839" transform="translate(1513 2780.073)">
+      <path id="パス_9523" data-name="パス 9523" d="M27,0V12.216h5.553V5.553H79.2v6.664h5.553V0Z" transform="translate(-12.007 0)" fill="#e86573"/>
+      <path id="パス_9524" data-name="パス 9524" d="M26.1,40.217h8.884v9.44H26.1Zm13.327,0h8.885v9.44H39.426Zm13.328,0h8.885v9.44H52.754ZM6.664,28V40.217H21.1v9.44H6.664v31.1H0v5.553H26.1V56.876H61.638V86.307h26.1V80.754H81.074v-31.1H66.637v-9.44H81.074V28Z" transform="translate(0 -12.452)" fill="#e86573"/>
+      <rect id="長方形_3949" data-name="長方形 3949" width="30.528" height="3.816" transform="translate(28.604 54.099)" fill="#e86573"/>
+      <rect id="長方形_3950" data-name="長方形 3950" width="30.528" height="3.816" transform="translate(28.604 47.739)" fill="#e86573"/>
+      <rect id="長方形_3951" data-name="長方形 3951" width="30.528" height="3.816" transform="translate(28.604 60.459)" fill="#e86573"/>
+      <rect id="長方形_3952" data-name="長方形 3952" width="30.528" height="2.544" transform="translate(28.604 68.091)" fill="#e86573"/>
+    </g>
+  </g>
+</svg>

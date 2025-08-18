@@ -1,0 +1,99 @@
+/*============================
+MV
+============================*/
+#mv {
+	background-image: url(../img/news/mv_bg.jpg);
+}
+
+
+/*============================
+記事詳細
+============================*/
+#detail {
+
+}
+
+/* タイトル */
+#detail .title_wrap {
+	border-left: 5px solid #5FC1AA;
+	margin-bottom: 0.25rem;
+	padding: 0.10rem 0 0.10rem 0.10rem;
+}
+
+#detail .title_wrap .date {
+	font-size: 0.13rem;
+	letter-spacing: 0.05em;
+	padding-bottom: 0.10rem;
+}
+
+#detail .title_wrap .title {
+	font-size: 0.22rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+
+/* コンテンツ */
+#detail .cont_wrap {
+
+}
+
+#detail .cont_wrap h1 {
+	font-size: 0.26rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #fff;
+	background-color: #5FC1AA;
+	padding: 0.10rem;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h2 {
+	font-size: 0.24rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	border-bottom: 1px solid #5FC1AA;
+	padding-bottom: 0.10rem;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h3 {
+	font-size: 0.22rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h4 {
+	font-size: 0.20rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h5 {
+	font-size: 0.18rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.1rem;
+}
+
+
+#detail .cont_wrap p {
+	font-size: 0.16rem;
+	line-height: 1.75;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.20rem;
+}
+
+/* ボタン */
+#detail .btn_common  {
+	margin-top: 0.50rem;
+}
+
+#detail .btn_common a {
+	margin: 0 auto;
+}

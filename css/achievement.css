@@ -1,0 +1,171 @@
+/*============================
+MV
+============================*/
+#mv {
+	background-image: url(../img/achievement/mv_bg.jpg);
+}
+
+/*============================
+記事詳細
+============================*/
+#detail {
+
+}
+
+/* タイトル */
+#detail .title_wrap {
+	border-left: 5px solid #5FC1AA;
+	margin-bottom: 0.25rem;
+	padding: 0.10rem 0 0.10rem 0.10rem;
+	display: flex;
+	align-items: center;
+}
+
+#detail .title_wrap .category {
+	font-size: 0.14rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	padding-bottom: 0.10rem;
+	background: #5FC1AA;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 0.1rem 0.15rem;
+	border-radius: 0.20rem;
+}
+
+#detail .title_wrap .title {
+	font-size: 0.22rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	box-sizing: border-box;
+	padding-left: 0.10rem;
+}
+
+/* コンテンツ */
+#detail .cont_wrap {
+
+}
+
+#detail .cont_wrap h1 {
+	font-size: 0.26rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #fff;
+	background-color: #5FC1AA;
+	padding: 0.10rem;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h2 {
+	font-size: 0.24rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	border-bottom: 1px solid #5FC1AA;
+	padding-bottom: 0.10rem;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h3 {
+	font-size: 0.22rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h4 {
+	font-size: 0.20rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.1rem;
+}
+
+#detail .cont_wrap h5 {
+	font-size: 0.18rem;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.1rem;
+}
+
+
+#detail .cont_wrap p {
+	font-size: 0.16rem;
+	line-height: 1.75;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.20rem;
+}
+
+
+
+
+/*============================
+他店比較
+============================*/
+#tatenhikaku {
+	margin-top: 1.00rem;
+}
+
+#tatenhikaku .lead_box {
+	background: #E7F6F3;
+	box-sizing: border-box;
+	padding: 0.25rem 0.35rem;
+	position: relative;
+}
+
+
+#tatenhikaku .lead_box .title {
+	font-size: 0.22rem;
+	font-weight: bold;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	color: #5FC1AA;
+	margin-bottom: 0.20rem;
+}
+
+
+#tatenhikaku .lead_box small {
+	font-size: 0.13rem;
+	line-height: 1.5;
+	padding-left: 0.13rem;
+	text-indent: -0.13rem;
+	display: block;
+}
+
+
+#tatenhikaku .lead_box .ph_wrap {
+	width: 2.85rem;
+	position: absolute;
+	right: 0.2rem;
+	top: -0.40rem;
+}
+
+#tatenhikaku .bottom_text {
+	margin-top: 0.30rem;
+}
+
+#tatenhikaku .bottom_text .text {
+	font-size: 0.16rem;
+	line-height: 2;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.20rem;;
+}
+
+#tatenhikaku .bottom_text .text a {
+	color: #E86573;
+}
+
+
+#tatenhikaku .bottom_text  .list {
+}
+
+#tatenhikaku .bottom_text  .list .item {
+	font-size: 0.16rem;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.05rem;
+	padding-left: 0.13rem;
+	text-indent: -0.13rem;
+}

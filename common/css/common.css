@@ -1,0 +1,498 @@
+/* HTML初期化 */
+body {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+	/* Chromeバグ対策 */
+	overscroll-behavior: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-style: normal;
+}
+
+p,
+dl,
+dt,
+dd,
+em,
+form,
+address,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+
+/* HTML5用 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+	position: relative;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+/* tableタグ*/
+th,
+td {
+	padding: 0;
+}
+
+caption {
+	text-align: left;
+}
+
+
+/* リンク設定 */
+a {
+	outline: 0;
+	border: 0;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 799px) {
+	a {
+		transition: none !important;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	a[href^="tel:"] {
+		pointer-events: none;
+	}
+}
+
+a img {
+	border: 0;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	-webkit-backface-visibility: hidden;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+	zoom: 1;
+}
+
+body,
+html {
+	min-height: 100%;
+}
+
+
+/*============================================
+基本CSS
+===========================================*/
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100px;
+	-webkit-font-smoothing: antialiased;
+	background-color: #FFF;
+}
+
+/*
+@media screen and (min-width: 1401px) {
+	html {
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+		font-size: 100px;
+	}
+}
+*/
+
+@media print,
+screen and (min-width:1440px) and (max-width:1599px) {
+	html {
+		font-size: 100px;
+	}
+}
+
+@media print, screen and (min-width:1366px) and (max-width:1439px) {
+		html {
+		font-size: 90px;
+	}
+}
+@media print,
+screen and (min-width:1280px) and (max-width:1365px) {
+	html {
+		font-size: 85px;
+	}
+}
+
+@media print,
+screen and (min-width:600px) and (max-width:1279px) {
+	html {
+		font-size: 85px;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	html {
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	html {
+		font-size: 85px;
+	}
+}
+
+body {
+	font-family: 'Poppins','Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', Meiryo, sans-serif;
+	-webkit-font-feature-settings: "palt";
+	font-feature-settings: "palt";
+	min-width: 1080px;
+	position: relative;
+	font-size: .11rem;
+	letter-spacing: 0.05em;
+	color: #3c3c3c;
+}
+
+
+@media screen and (max-width: 599px) {
+	body {
+		min-width: 100%;
+		overflow-x: hidden;
+	}
+
+	body.menu_open {
+		overflow: hidden;
+	}
+}
+
+@media screen and (min-width:600px) {
+	.pc_only {
+		display: block !important;
+	}
+
+	.sp_only {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.pc_only {
+		display: none;
+	}
+
+	.sp_only {
+		display: block;
+	}
+}
+
+main {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+/* インナーボックス */
+.in {
+	width: 100%;
+	max-width: 12.80rem;
+	margin: auto;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	position: relative;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 599px) {
+	.in {
+		padding-left: 0.2rem;
+		padding-right: 0.2rem;
+	}
+}
+
+/* ページの先頭に戻る */
+#page_top {
+	position: fixed;
+	bottom: 0.30rem;
+	right: 0.30rem;
+	width: .5rem;
+	height: .5rem;
+	cursor: pointer;
+	background-position: center center;
+	background-size: cover;
+	display: none;
+	z-index: 10;
+}
+
+/* 丸形のボタン */
+#page_top.round {
+	background-image: url(../img/back_to_top_round.svg);
+}
+
+/* 四角ボタン */
+#page_top.square {
+	background-image: url(../img/back_to_top_square.svg);
+}
+
+@media screen and (max-width: 599px) {
+	#page_top {
+		width: .4rem;
+		height: .4rem;
+		bottom: 0.90rem;
+		right: 0.20rem;
+	}
+}
+
+/*=============================
+スマホメニュー
+=============================*/
+
+/* 開閉ボタン */
+#SPnaviBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0.50rem;
+	height: 0.50rem;
+	text-align: center;
+	display: block;
+	z-index: 10;
+}
+}
+
+.menu-trigger,
+.menu-trigger span {
+	display: inline-block;
+	transition: all .2s;
+	box-sizing: border-box;
+}
+
+#SPmenuBars {
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.menu-trigger span {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #111;
+	transition: all 0.3s;
+}
+
+.menu-trigger.active span {
+	background-color: #111;
+}
+
+header.scrolled .menu-trigger span {
+	background-color: #111;
+}
+
+.menu-trigger span:nth-of-type(1) {
+	top: 30%;
+}
+
+.menu-trigger span:nth-of-type(2) {
+	top: 49%;
+}
+
+.menu-trigger span:nth-of-type(3) {
+	bottom: 30%;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+	-webkit-transform: rotate(-45deg);
+	transform: translateY(0) rotate(-45deg);
+	top: 50%;
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+	-webkit-transform: translateY(0) rotate(45deg);
+	transform: translateY(0) rotate(45deg);
+	bottom: 50%;
+}
+
+@media screen and (max-width: 350px) {
+	.menu-trigger.active span:nth-of-type(3) {
+		-webkit-transform: translateY(0) rotate(45deg);
+		transform: translateY(0) rotate(45deg);
+		bottom: 45%;
+	}
+}
+
+/*======================
+アコーディオン
+======================*/
+.acc_title {
+	cursor: pointer;
+}
+
+.acc_contents {
+	display: none;
+}
+
+
+/*======================
+アニメーション
+======================*/
+/* 場所はそのままでフェードイン */
+.fade_in {
+	opacity: 0;
+	transition: all 0.5s ease;
+	transition-delay: 0.2s;
+}
+
+.fade_in.scrollin {
+	opacity: 1;
+}
+
+/* 時間差フェード */
+.fade {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 0.5s ease;
+	transition-delay: 0.2s;
+}
+
+.fade02 {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 0.5s ease;
+	transition-delay: 0.6s;
+}
+
+.fade03 {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 0.5s ease;
+	transition-delay: 1.0s;
+}
+
+.fade04 {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 0.5s ease;
+	transition-delay: 1.4s;
+}
+
+.fade05 {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 0.5s ease;
+	transition-delay: 1.8s;
+}
+
+.fade06 {
+	opacity: 0;
+	transform: translate(0, 20px);
+	transition: all 0.5s ease;
+	transition-delay: 2.2s;
+}
+
+@media screen and (max-width: 599px) {
+	.fade,
+	.fade02,
+	.fade03,
+	.fade04,
+	.fade05,
+	.fade06 {
+		transition: all 0.5s ease;
+		transition-delay: 0.2s;
+	}
+}
+
+.fade.scrollin,
+.fade02.scrollin,
+.fade03.scrollin,
+.fade04.scrollin,
+.fade05.scrollin,
+.fade06.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* 右から出現 */
+.fade_right {
+	opacity: 0;
+	transform: translate(20px, 0);
+	transition: all 1.4s ease;
+	transition-delay: 0.2s;
+}
+
+.fade_right.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* 左から出現 */
+.fade_left {
+	opacity: 0;
+	transform: translate(-20px, 0);
+	transition: all 1.4s ease;
+	transition-delay: 0.2s;
+}
+
+.fade_left.scrollin {
+	opacity: 1;
+	transform: translate(0, 0);
+}

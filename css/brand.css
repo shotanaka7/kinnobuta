@@ -1,0 +1,172 @@
+/*============================
+MV
+============================*/
+#mv {
+	background-image: url(../img/brand/mv_bg.jpg);
+}
+
+/*============================
+取り扱いブランド一覧
+============================*/
+#brand_list .lead {
+	font-size: 0.16rem;
+	line-height: 1.65;
+	letter-spacing: 0.05em;
+	text-align: center;
+	margin-top: 0.10rem;
+	margin-bottom: 0.60rem;
+}
+
+/* タイトル */
+.brand_list_wrap .title {
+	font-size: 0.22rem;
+	font-weight: bold;
+	background: #5FC1AA;
+	color: #fff;
+	text-align: center;
+	padding: 0.15rem 0.20rem;
+	box-sizing: border-box;
+}
+
+.brand_list_wrap .list_box {
+	margin-bottom: 0.20rem;
+}
+
+
+.brand_list_wrap .list_box  .title{
+	font-size: 0.18rem;
+	font-weight: bold;
+	position: relative;
+}
+
+
+.brand_list_wrap .list_box .title:hover{
+	opacity: 0.7;
+}
+
+
+
+.brand_list_wrap .list_box .title::after {
+    content: "";
+    width: 0.2rem;
+    height: 0.15rem;
+    background-image: url(../img/brand/brand_arrow.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0.35rem;
+    top: 0.2rem;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.brand_list_wrap .list_box .title.open::after {
+    transform: rotate(180deg);
+}
+
+.brand_list_wrap .list_box .cont {
+	display: none;
+}
+
+.brand_list_wrap .list_box .cont .list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.22rem;
+}
+
+.brand_list_wrap .list_box .cont .list .item {
+	width:25%;
+	text-align: center;
+	margin-bottom: 0.18rem;
+}
+
+.brand_list_wrap .list_box .cont .list .item a {
+	text-decoration: none;
+	color: #000;
+}
+
+.brand_list_wrap .list_box .cont .list .item a:hover {
+	opacity: 0.7;
+}
+
+.brand_list_wrap .list_box .item .name {
+	font-size: 0.16rem;
+}
+
+
+
+/*============================
+ブランド詳細
+============================*/
+#brand_detail .lead {
+	font-size: 0.16rem;
+	line-height: 1.65;
+	letter-spacing: 0.05em;
+	text-align: center;
+	margin-top: 0.10rem;
+	margin-bottom: 0.60rem;
+}
+
+#brand_detail .brand_detail_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#brand_detail .brand_detail_wrap .brand_detail_box {
+	width: 48%;
+	display: flex;
+	margin-bottom: 0.80rem;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .ph_wrap {
+	width: 2.00rem;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap {
+	width: calc(100% - 2.00rem);
+	box-sizing: border-box;
+	padding-left: 0.20rem;
+}
+
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap .item_name {
+	font-size: 0.18rem;
+	font-weight: 500;
+	padding-top: 0.30rem;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap .price_title {
+	font-size: 0.15rem;
+	padding-top: 0.15rem;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap .price {
+	font-size: 0.16rem;
+	margin-top: 0.05rem;
+	margin-bottom: 0.3rem;	
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap .price span {
+	font-size: 0.23rem;
+	font-weight: bold;
+	color: #E86573;
+}
+
+/* ボタン */
+#brand_detail .btn_common a {
+	margin: auto;
+}
+
+/*============================
+検索結果
+============================*/
+#brand_detail .none_text {
+	font-size: 0.20rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}

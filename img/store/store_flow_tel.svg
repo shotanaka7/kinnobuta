@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="47" viewBox="0 0 230 47">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_312" data-name="長方形 312" width="38.792" height="25.318" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_7238" data-name="グループ 7238" transform="translate(-957 -3603)">
+    <g id="グループ_6985" data-name="グループ 6985" transform="translate(-322 3746)">
+      <g id="グループ_111" data-name="グループ 111" transform="translate(1284 -140.675)">
+        <rect id="長方形_311" data-name="長方形 311" width="38.793" height="25.318" transform="translate(0 0)" fill="#e86573"/>
+        <g id="グループ_110" data-name="グループ 110" transform="translate(0 0)">
+          <g id="グループ_109" data-name="グループ 109" clip-path="url(#clip-path)">
+            <path id="パス_126" data-name="パス 126" d="M9.75,27.962A4.8,4.8,0,0,1,4.98,22.98c0-2.6,2.579-4.685,4.77-5.929,2.189,1.245,4.769,3.325,4.769,5.929A4.8,4.8,0,0,1,9.75,27.962m14.615-5.039c0-2.605,2.578-4.686,4.769-5.93,2.191,1.244,4.768,3.325,4.768,5.93a4.773,4.773,0,1,1-9.537,0M38.789,12.264a21.86,21.86,0,0,0-9.807,2.216,20.881,20.881,0,0,0-9.589-2.216A20.877,20.877,0,0,0,9.8,14.48,21.833,21.833,0,0,0,0,12.264v2.217a19.6,19.6,0,0,1,7.376,1.4c-2.4,1.6-4.768,4.032-4.768,7.1A7.25,7.25,0,0,0,9.8,30.125a7.108,7.108,0,0,0,7.024-7.148c0-3.066-2.2-5.495-4.6-7.1a18.542,18.542,0,0,1,7.165-1.4,18.539,18.539,0,0,1,7.165,1.4c-2.4,1.6-4.6,4.032-4.6,7.1a7.108,7.108,0,0,0,7.024,7.148,7.2,7.2,0,0,0,7.139-7.148c0-3.066-2.317-5.495-4.715-7.1a19.628,19.628,0,0,1,7.383-1.4Z" transform="translate(-0.003 -8.324)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <text id="_0120-03-6022" data-name="0120-03-6022" transform="translate(1329.714 -119)" fill="#e86573" font-size="26" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">0120-03-6022</tspan></text>
+    </g>
+    <text id="ご相談_受付10:00_18:00_日祝定休日_" data-name="ご相談・受付10:00〜18:00（日祝定休日）" transform="translate(1072 3646)" font-size="12" font-family="HiraginoSans-W4, Hiragino Sans"><tspan x="-114.732" y="0">ご相談・受付</tspan><tspan y="0" font-family="NotoSans-Medium, Noto Sans" font-weight="500">10:00</tspan><tspan y="0">〜</tspan><tspan y="0" font-family="NotoSans-Medium, Noto Sans" font-weight="500">18:00</tspan><tspan y="0">（日祝定休日）</tspan></text>
+  </g>
+</svg>

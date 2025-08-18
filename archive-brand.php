@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="">
+
+<head>
+
+	<?php require('header.php'); ?>
+	<title>取り扱いブランド一覧</title>
+	<link rel="stylesheet" type="text/css" href="/css/lower_common.css?=<?php echo date('YmdHi'); ?>">
+	<link rel="stylesheet" type="text/css" href="/css/brand.css?=<?php echo date('YmdHi'); ?>">
+
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+</head>
+
+<body id="top">
+
+	<?php require('inc/page_header.php'); ?>
+
+	<main id="brand">
+
+		<section id="mv">
+			<h2 class="title">取り扱いブランド一覧</h2>
+			<span>FOR FIRSTTIME USERS</span>
+		</section>
+
+		<div class="in">
+			<section id="all_cont_wrapper">
+
+				<!-- サイドバー -->
+				<section id="sidebar">
+					<?php require('inc/sidebar.php'); ?>
+				</section>
+				<!-- サイドバー -->
+
+				<!-- メインコンテンツ -->
+				<section id="main_cont">
+
+					<!--パンくず-->
+					<div class="pankuz">
+						<ul class="list">
+							<li class="item"><a href="/">ホーム</a></li>
+							<li class="item"><a href="/">取り扱いブランド一覧</a></li>
+							<li class="item">ARSOA</li>
+						</ul>
+					</div>
+					<!--/パンくず-->
+
+					<section id="brand_detail">
+						<h2 class="sec_title"><span>ARSOA</span></h2>
+						<p class="lead">高額買取ならお任せください！</p>
+						<div class="brand_detail_wrap">
+							<div class="brand_detail_box">
+								<div class="ph_wrap">
+									<img src="img/brand/item_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<h3 class="item_name">商品名がはいります</h3>
+									<div class="price_title">買取価格</div>
+									<div class="price"><span>〜4,500</span>円</div>
+									<div class="btn_mini_common">
+										<a href="/single-product.php"><span>詳しく見る</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="brand_detail_box">
+								<div class="ph_wrap">
+									<img src="img/brand/item_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<h3 class="item_name">商品名がはいります</h3>
+									<div class="price_title">買取価格</div>
+									<div class="price"><span>〜4,500</span>円</div>
+									<div class="btn_mini_common">
+										<a href=""><span>詳しく見る</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="brand_detail_box">
+								<div class="ph_wrap">
+									<img src="img/brand/item_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<h3 class="item_name">商品名がはいります</h3>
+									<div class="price_title">買取価格</div>
+									<div class="price"><span>〜4,500</span>円</div>
+									<div class="btn_mini_common">
+										<a href=""><span>詳しく見る</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="brand_detail_box">
+								<div class="ph_wrap">
+									<img src="img/brand/item_img.png" alt="">
+								</div>
+								<div class="text_wrap">
+									<h3 class="item_name">商品名がはいります</h3>
+									<div class="price_title">買取価格</div>
+									<div class="price"><span>〜4,500</span>円</div>
+									<div class="btn_mini_common">
+										<a href=""><span>詳しく見る</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_common">
+							<a href="page-brand.php"><span>ブランド一覧へ戻る</span></a>
+						</div>
+					</section>
+
+					<?php require('inc/module_standard.php'); ?>
+					<?php require('footer.php'); ?>
+
+</body>
+
+</html>

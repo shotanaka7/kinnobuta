@@ -1,0 +1,426 @@
+/*============================
+MV
+============================*/
+#mv {
+	position: relative;
+	width: calc(100% - 1.00rem);
+	height: 7rem;
+	/* margin-left: calc((100% - 12rem) / 2); */
+	background: url(../img/top/top_mv.jpg) no-repeat center;
+	background-size: cover;
+	border-radius:0.3rem 0 0 0.3rem;
+	margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+	#mv {
+		margin-left: calc(50% - 6.00rem);
+	}
+}
+
+#mv .lead {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0.8rem;
+}
+
+/*============================
+キャンペーン
+============================*/
+#campaign {
+}
+#campaign .lead {
+	font-size: 0.16rem;
+	line-height: 2;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+
+
+#campaign .campaign_slider_wrap {
+	position: relative;
+	z-index: 0;
+}
+
+#campaign .slick-slide {
+	width: 7rem !important;
+	max-width: 7rem;
+	padding: 0 0.20rem;
+}
+
+@media screen and (max-width: 599px) {
+	#campaign .slick-slide {
+		padding: 0;
+		width: 200vw !important;
+		max-height: 4.00rem;
+	}
+}
+
+#campaign .slide .img_wrap {
+	border-radius: 0.30rem;
+	overflow: hidden;
+	margin: auto;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 599px) {
+	#campaign .slide .img_wrap {
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
+
+
+/*============================
+きんのぶたが選ばれる理由
+============================*/
+#riyu {
+	background: url(../img/top/riyu_bg.png) no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+	margin-top: 1.00rem;
+	margin-bottom: 0.90rem;
+	padding: 0.30rem;
+}
+
+/* タイトル */
+#riyu .title_warap {
+
+}
+
+#riyu .title_warap .sec_title {
+	text-align: left;
+	margin-top: 0.15rem;
+}
+
+#riyu .title_warap .sec_title span {
+	border-bottom: none;
+	position: relative;
+}
+
+#riyu .title_warap .sec_title span::after {
+	content: '';
+	position: absolute;
+	width: 1.5rem;
+	height: 0.02rem;
+	background: #5FC1AA;
+	top: 60%;
+	transform: translateY(-50%);
+	right: -1.7rem;
+}
+
+/* リード */
+#riyu .lead {
+	font-size: 0.18rem;
+	line-height: 1.6;
+	max-width: 5.6rem;
+	letter-spacing: 0.07em;
+	margin-bottom: 0.55rem;
+}
+
+/* リスト */
+#riyu .list {
+	max-width: 5.7rem;
+
+}
+
+#riyu .list .item {
+	color: #fff;
+	width: 100%;
+	background: #E86573;
+	box-sizing: border-box;
+	padding: 0.12rem 0 0.12rem 0.40rem;
+	display: flex;
+	align-items: center;
+	border-radius: 0.30rem;
+	position: relative;
+	margin-bottom: 0.15rem;
+}
+
+
+#riyu .list .item span {
+	font-size: 0.28rem;
+	font-weight: 600;
+	width: 25%;
+}
+
+#riyu .list .item::before {
+	content: '';
+	position: absolute;
+	width: 0.20rem;
+	height: 0.20rem;
+	background: url(../img/common/icon_check.svg) no-repeat center;
+	background-size: contain;
+	left: 0.15rem;
+}
+
+#riyu .list .item h3 {
+	width: 75%;
+	font-size: 0.21rem;
+	font-weight: bold;
+}
+
+
+/*============================
+買取ブランドリスト
+============================*/
+#brand {
+	margin-bottom: 0.90rem;
+}
+
+#brand .lead {
+    font-size: 0.16rem;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+#brand .list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 0.22rem;
+}
+
+#brand .list .item {
+	width:25%;
+	text-align: center;
+	margin-bottom: 0.18rem;
+}
+
+#brand .list .item .name {
+	font-size: 0.16rem;
+}
+
+#brand .btn_common a {
+	margin: auto;
+}
+
+
+/*============================
+買取の流れ
+============================*/
+#flow {
+
+}
+
+#flow .flow_wraper {
+	display: flex;
+	justify-content: space-between;
+}
+
+#flow .flow_wraper .flow_box {
+	width: 49%;
+}
+
+/* タイトル */
+#flow .flow_wraper .flow_box .title {
+	font-weight: bold;
+	font-size: 0.30rem;
+	text-align: center;
+	color: #fff;
+	padding: 0.20rem 0;
+	border-radius:0.10rem 0.10rem 0 0;
+}
+
+#flow .flow_wraper .flow_box .title span {
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	padding-right: 0.20rem;
+}
+
+/* テーブル */
+#flow .flow_wraper .flow_box table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#flow .flow_wraper .flow_box table tr {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0.20rem;
+	position: relative;
+}
+
+#flow .flow_wraper .flow_box table tr::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: calc(100% - 0.40rem);
+	height: 1px;
+	background: #5FC1AA;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* 高さ */
+#flow .flow_wraper .flow_box table tr.h190 {
+	height: 1.90rem;
+}
+
+#flow .flow_wraper .flow_box table tr.h165 {
+	height: 1.65rem;
+}
+
+#flow .flow_wraper .flow_box table tr.h135 {
+	height: 1.35rem;
+}
+
+#flow .flow_wraper .flow_box table th {
+	width: 30%;
+	text-align: center;
+}
+
+#flow .flow_wraper .flow_box table td {
+	width: 70%;
+	padding: 0.25rem 0.10rem;
+}
+
+/* テーブルタイトル */
+#flow .flow_wraper .flow_box table td .table_title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.15rem;
+}
+
+#flow .flow_wraper .flow_box table td .table_title .circle{
+	display: inline-block;
+	width: 0.28rem;
+	height: 0.28rem;
+	border-radius: 50%;
+	background: #5FC1AA;
+	text-align:center;
+	line-height: 0.28rem;
+	color: #fff;
+	font-size: 0.18rem;
+	font-weight: bold;
+}
+
+#flow .flow_wraper .flow_box table td .table_title h3 {
+	font-size: 0.22rem;
+	font-weight: bold;
+	padding-left: 0.10rem;
+}
+
+/* テキスト */
+#flow .flow_wraper .flow_box table td .text {
+	font-size: 0.15rem;
+	line-height: 1.6em;
+}
+
+#flow .flow_wraper .flow_box table td .text small {
+	font-size: 0.14rem;
+	display: block;
+}
+
+/* ミニボタン */
+#flow .flow_wraper .flow_box table td .btn_mini_common {
+	margin-top: 0.15rem;
+}
+
+/* ボタン */
+#flow .flow_wraper .flow_box .btn_wrapper {
+    background: rgba(95, 193, 170, 0.1);
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 0.50rem;
+	padding-bottom: 0.30rem;
+	border-radius: 0 0 0.10rem 0.10rem
+}
+
+#flow .flow_wraper .flow_box .btn_wrapper .btn_common {
+	padding-bottom: 0.20rem;
+}
+
+#flow .flow_wraper .flow_box .btn_wrapper .btn_common a {
+	margin: auto;
+}
+
+/****** 
+宅配買取 
+******/
+/* タイトル */
+#flow .flow_wraper .flow_box.delivery .title {
+	background: #5FC1AA;
+}
+
+/* テーブル */
+#flow .flow_wraper .flow_box.delivery table {
+	background: rgba(95, 193, 170, 0.1);
+}
+
+#flow .flow_wraper .flow_box.delivery table td .table_title h3 {
+	color: #5FC1AA;
+}
+
+/****** 
+店舗買取
+******/
+/* タイトル */
+#flow .flow_wraper .flow_box.store .title {
+	background: #E86573;
+}
+
+/* テーブル */
+#flow .flow_wraper .flow_box.store table {
+	background: rgba(232, 101, 115, 0.1);
+}
+
+#flow .flow_wraper .flow_box.store table td .table_title h3 {
+	color: #E86573;
+}
+
+#flow .flow_wraper .flow_box.store table td .table_title .circle{
+	background: #E86573;
+}
+
+
+#flow .flow_wraper .flow_box.store table tr::after {
+	background: #E86573;
+}
+
+/* ボタン */
+#flow .flow_wraper .flow_box.store .btn_wrapper {
+	background: rgba(232, 101, 115, 0.1);
+}
+
+/*============================
+ヘッドライン
+============================*/
+#headline {
+    background: rgba(95, 193, 170, 0.1);
+	margin: 0.90rem 0 0.30rem;
+	padding: 0.60rem 0.30rem;
+}
+
+#headline .list {
+	margin-top: 0.30rem;
+}
+
+#headline .list .item {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #5FC1AA;
+}
+
+#headline .list .item:first-child {
+	border-top: 1px solid #5FC1AA;
+}
+
+/* 日付 */
+#headline .list .item .date {
+	font-size: 0.14rem;
+	padding: 0.20rem 0.15rem;
+	width: 1.00rem;
+}
+
+/* タイトル */
+#headline .list .item .text {
+	font-size: 0.16rem;
+	font-weight: bold;
+	color: #5FC1AA;
+	width: calc(100% - 1.00rem);
+}

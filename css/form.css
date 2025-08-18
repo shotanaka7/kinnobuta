@@ -1,0 +1,449 @@
+/*============================
+MV
+============================*/
+#mv.contact {
+	background-image: url(../img/contact/mv_pc.jpg);
+}
+
+#mv.entry {
+	background-image: url(../img/entry/mv_pc.jpg);
+}
+
+/*============================
+お問い合わせフォームのみ
+============================*/
+/* お電話での買取・相談 */
+#contact_tel {
+	background-color: #EFF9F6;
+	padding: 0.25rem;
+	margin-bottom: 1.10rem;
+}
+
+#contact_tel .tel_img {
+	width: 100%;
+	max-width: 4.00rem;
+	margin: auto;
+}
+
+/*============================
+宅配買取お申込みフォームのみ
+============================*/
+/* ダウンロードボタン */
+.download_btn {
+	width: 100%;
+	max-width: 3.50rem;
+	padding: 0.30rem 0;
+	margin: auto;
+}
+@media screen and (max-width: 599px) {
+	.download_btn {
+		max-width: 3.0rem;
+		padding: 0.25rem 0;
+	}
+}
+
+
+.download_btn a {
+	display: block;
+	line-height: 0;
+	font-size: 0.18rem;
+	font-weight: 700;
+	padding: 0.29rem 0 0.31rem;
+	text-align: center;
+	background-color: #FFF;
+	border: 1px solid #5FC1AA;
+	border-radius: 0.30rem;
+	color: #5FC1AA;
+	text-decoration: none;
+	position: relative;
+}
+
+.download_btn a:hover {
+	background-color: #5FC1AA;
+	color: #FFF;
+}
+
+.download_btn a::after {
+	content: "";
+	width: 0.18rem;
+	height: 0.16rem;
+	background-image: url(../img/common/icon_download_green.svg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	right: 0.20rem;
+	top: 46%;
+	transform: translateY(-50%);
+}
+
+.download_btn a:hover::after {
+	background-image: url(../img/common/icon_download_white.svg);
+}
+
+
+/*============================
+お問い合わせ・宅配申し込み 共通
+============================*/
+/* タイトル下のリード文 */
+.contact_form .lead {
+	font-size: 0.16rem;
+	line-height: 1.75;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+@media screen and (max-width: 599px) {
+	.contact_form .lead {
+		font-size: 0.14rem;
+		text-align: left;
+	}
+}
+
+
+.contact_form .lead a {
+	color: #E86573;
+}
+
+/* フォーム全体 */
+.contact_form .form_table {
+	padding: 0.50rem 0;
+}
+
+.contact_form .form_table table {
+	width: 100%;
+	border-collapse:collapse;
+	border-top: 1px solid #5FC1AA;
+	font-size: 0.16rem;
+	letter-spacing: 0.05em;
+}
+@media screen and (max-width: 599px) {
+	.contact_form .form_table table {
+		border-top: 0;
+		table-layout: fixed;
+		word-break: break-all;
+		word-wrap: break-all;
+	}
+}
+
+
+.contact_form .form_table table .title {
+	width: 2.70rem;
+	padding: 0.20rem 0 0;
+	position: relative;
+	text-align: left;
+	border-bottom: 1px solid #5FC1AA;
+	vertical-align: top;
+	line-height: 1.45;
+}
+@media screen and (max-width: 599px) {
+	.contact_form .form_table table .title {
+		width: 100%;
+		display: block;
+		border-bottom: none;
+		background: rgba(95, 193, 170, 0.1);
+		padding: 0.13rem;
+		box-sizing: border-box;
+	}
+}
+
+/* 確認画面用 */
+.contact_form .form_table .mw_wp_form_confirm table .title {
+	padding: 0.20rem 0;
+}
+
+@media screen and (max-width: 599px) {
+	.contact_form .form_table .mw_wp_form_confirm table .title {
+		padding: 0.13rem;
+	}
+}
+
+
+.contact_form .form_table table .title .note {
+	font-size: 0.12rem;
+	font-weight: 500;
+	position: relative;
+	top: -0.03rem;
+}
+
+/* 必須アイコン */
+.contact_form .form_table table .title.required::after {
+	content: "必須";
+	font-size: 0.11rem;
+	font-weight: 500;
+	color: #FFF;
+	background-color: #E86573;
+	line-height: 1;
+	padding: 0.04rem 0.06rem 0.03rem;
+	border-radius: 0.03rem;
+	position: absolute;
+	right: 0.20rem;
+	top: 0.21rem;
+}
+
+.contact_form .form_table table .text {
+	padding: 0.15rem 0;
+	position: relative;
+	border-bottom: 1px solid #5FC1AA;
+}
+@media screen and (max-width: 599px) {
+	.contact_form .form_table table .text {
+		display: block;
+		width: 100%;
+		border-bottom: none;
+		margin-bottom: 0.15rem;
+	}
+}
+
+/* エラー表示 */
+.contact_form .form_table table .text .error {
+	font-size: 0.14rem;
+	font-weight: 700;
+	padding-top: 0.10rem;
+}
+
+/* 確認画面用 */
+.contact_form .form_table .mw_wp_form_confirm table .text {
+	line-height: 1.75;
+}
+
+/* フォーム（text） */
+.contact_form .form_table table .text input[type="text"] {
+	background-color: #F0F0F0;
+	font-size: 0.16rem;
+	padding: 0.06rem;
+	border: 1px solid #707070;
+	box-sizing: border-box;
+}
+
+/* フォーム（tel） */
+.contact_form .form_table table .text input[type="tel"] {
+	background-color: #F0F0F0;
+	font-size: 0.16rem;
+	padding: 0.06rem;
+	border: 1px solid #707070;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 599px) {
+	.contact_form .form_table table .text input[type="tel"] {
+		font-size: 0.14rem;
+	}
+}
+
+
+
+/* 幅40% */
+.contact_form .form_table table .text .w40 {
+	width: 40%;
+}
+/* 幅100% */
+.contact_form .form_table table .text .w100 {
+	width: 100%;
+}
+
+/* フォーム（textarea） */
+.contact_form .form_table table .text textarea {
+	background-color: #F0F0F0;
+	font-size: 0.16rem;
+	padding: 0.06rem;
+	border: 1px solid #707070;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 2.50rem;
+}
+
+/* フォーム（radio） */
+.contact_form .form_table table .text .radio_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact_form .form_table table .text .radio_list .mwform-radio-field {
+	width: 31%;
+	padding: 0.07rem 0;
+}
+@media screen and (max-width: 599px) {
+	.contact_form .form_table table .text .radio_list .mwform-radio-field {
+		width: 50%;
+	}
+}
+
+
+.contact_form .form_table table .text .radio_list .radio input {
+	position: relative;
+	top: -0.02rem;
+	display: inline-block;
+	margin-right: 0.06rem;
+	width: 0.14rem;
+	height: 0.14rem;
+}
+
+.mw_wp_form .horizontal-item + .horizontal-item {
+    margin-left: 0!important;
+}
+
+/* radioボタンの次に来るtextの場合 */
+.contact_form .form_table table .text .radio_list + input[type="text"] {
+	margin-top: 0.05rem;
+}
+
+/* フォーム（select） */
+.contact_form .form_table table .text select {
+	background-color: #F0F0F0;
+	font-size: 0.16rem;
+	padding: 0.06rem;
+	border: 1px solid #707070;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+/* 注意書き */
+.contact_form .form_table .small_caption {
+	padding: 0.20rem 0 0.40rem;
+}
+
+.contact_form .form_table .small_caption .list .text {
+	font-size: 0.14rem;
+	line-height: 1.45;
+	text-indent: -0.26rem;
+	margin-left: 0.26rem;
+	padding-bottom: 0.10rem;
+}
+
+.contact_form .form_table .small_caption .list .text a {
+	color: #E86573;
+}
+
+.contact_form .form_table .small_caption .list .text a:hover {
+	text-decoration: none;
+}
+
+/* 送信ボタンエリア */
+.contact_form .form_table .submit_btn_wrap .btn_list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* ボタン共通 */
+.contact_form .form_table .submit_btn_wrap .btn_list .btn {
+	width: 100%;
+	max-width: 3.50rem;
+	margin: 0 0.15rem;
+	position: relative;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn input {
+	display: block;
+	width: 100%;
+	line-height: 0;
+	padding: 0.29rem 0 0.31rem;
+	font-size: 0.18rem;
+	font-weight: 700;
+	text-align: center;
+	appearance: none;
+  -webkit-appearance: none;
+	border-radius: 0.30rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	position: relative;
+}
+
+/* 送信ボタン */
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.submit input {
+	border: 1px solid #5FC1AA;
+	background-color: #FFF;
+	color: #5FC1AA;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.submit:hover input {
+	background-color: #5FC1AA;
+	color: #FFF;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.submit::after {
+	content: "";
+	width: 0.12rem;
+	height: 0.12rem;
+	background-image: url(../img/common/btn_arrow_green.svg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	right: 0.15rem;
+	transform: translateY(-50%);
+	transition: all 0.3s;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.submit:hover::after {
+	background-image: url(../img/common/btn_arrow_white.svg);
+	right: 0.12rem;
+}
+
+/* 戻るボタン */
+/* 入力画面では非表示 */
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.back {
+	display: none;
+}
+
+/* 確認用ページで表示 */
+.contact_form .form_table .mw_wp_form_confirm .submit_btn_wrap .btn_list .btn.back {
+	display: block;
+}
+
+@media screen and (max-width: 599px) {
+	.contact_form .form_table .mw_wp_form_confirm .submit_btn_wrap .btn_list .btn.back {
+		margin-bottom: 0.20rem;
+	}
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.back input {
+	border: 1px solid #999;
+	background-color: #DDD;
+	color: #666;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.back:hover input {
+	background-color: #999;
+	color: #FFF;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.back::after {
+	content: "";
+	width: 0.12rem;
+	height: 0.12rem;
+	background-image: url(../img/common/btn_arrow_grey_rev.svg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 0.15rem;
+	transform: translateY(-50%);
+	transition: all 0.3s;
+}
+
+.contact_form .form_table .submit_btn_wrap .btn_list .btn.back:hover::after {
+	background-image: url(../img/common/btn_arrow_white_rev.svg);
+	left: 0.12rem;
+}
+
+
+/*============================
+完了画面
+============================*/
+.completion_box {
+	margin: 0.30rem 0;
+}
+
+.completion_box .form_end {
+	text-align: center;
+	font-size: 0.16rem;
+	margin-bottom: 0.30rem;
+	line-height: 1.65;
+}
+
+.completion_box .btn_common a {
+	margin: 0 auto;
+	margin-top: 0.50rem;
+}
