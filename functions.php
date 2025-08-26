@@ -177,3 +177,8 @@ function add_custom_column_id( $column_name, $id ) {
 
 
 remove_action( 'wp_head', 'wp_print_auto_sizes_contain_css_fix', 1 );
+
+/**
+ * カスタム関数
+ */
+require_once( get_template_directory() . '/inc/custom-functions.php' );
