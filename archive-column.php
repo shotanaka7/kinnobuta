@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="ja">
 
 <head>
 
@@ -69,7 +69,7 @@
 					<?php endif; ?>
 				</div>
 				<div class="text_wrap">
-					<h3 class="title"><?php the_title(); ?></h3>
+					<h2 class="title"><?php the_title(); ?></h2>
 					<p class="text"><?php the_excerpt(); ?></p>
 					<div class="btn_mini_common">
 					<a href="<?php the_permalink(); ?>"><span>詳しく見る</span></a>

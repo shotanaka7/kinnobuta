@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="ja">
 
 <head>
 
@@ -44,7 +44,7 @@
 			<div class="pankuz">
 			<ul class="list">
 				<li class="item"><a href="/">ホーム</a></li>
-				<li class="item"><a href="/">取り扱いブランド一覧</a></li>
+				<li class="item"><a href="<?php echo home_url( 'brandlist' ); ?>">取り扱いブランド一覧</a></li>
 				<li class="item"><?php single_term_title(); ?></li>
 			</ul>
 			</div>

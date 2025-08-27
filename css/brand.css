@@ -170,3 +170,58 @@ MV
     width: 100%;
     margin-bottom: 1rem;
 }
+
+/*
+2025.8.27 追記
+*/
+#brand_detail .brand_detail_wrap {
+	flex-direction: column;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .ph_wrap {
+	width: 100%;
+	text-align: center;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .ph_wrap img {
+	max-width: 100%;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap {
+	padding-left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap .btn_mini_common {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+	#brand_detail .brand_detail_wrap {
+		flex-direction: row;
+	}
+
+	#brand_detail .brand_detail_wrap .brand_detail_box {
+		width: 48%;
+		flex-direction: row;
+	}
+
+	#brand_detail .brand_detail_wrap .brand_detail_box .ph_wrap {
+		max-width: 100%;
+	}
+
+	#brand_detail .brand_detail_wrap .brand_detail_box .text_wrap {
+		padding-left: 0.2rem;
+		text-align: left;
+	}
+}

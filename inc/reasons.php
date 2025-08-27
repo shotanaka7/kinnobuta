@@ -6,7 +6,7 @@
 <section id="riyu">
 	<div class="title_warap">
 	<div class="ph_wrap">
-		<img src="/img/top/riyu_logo.svg" alt="KinnoButa">
+		<img src="<?php echo imgDir(); ?>/top/riyu_logo.svg" alt="KinnoButa">
 	</div>
 	<h2 class="sec_title"><span>きんのぶたが選ばれる理由</span></h2>
 	</div>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="ja">
 
 <head>
 
@@ -65,7 +65,7 @@
 				<div class="ph_wrap">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/voice/people_man_01.png" alt="">
 				</div>
-					<?php else : ?>
+				<?php else : ?>
 				<div class="cont_box man">
 					<div class="ph_wrap">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/voice/people_woman_01.png" alt="">
@@ -75,7 +75,7 @@
 
 					<div class="text_wrap">
 					<!-- タイトル -->
-					<h3 class="title"><?php the_title(); ?></h3>
+					<h2 class="title"><?php the_title(); ?></h2>
 					<!-- 名前 -->
 					<div class="name"><?php the_field( 'name' ); ?></div>
 					<div class="btn_mini_common">

@@ -80,6 +80,23 @@
 	padding-left: 0.10rem;
 }
 
+/*
+2025.8.27 追記
+*/
+.pankuz {
+	overflow-x: auto;
+}
+
+.pankuz .list {
+	display: block;
+	width: auto;
+	white-space: nowrap;
+}
+
+.pankuz .list .item {
+	display: inline-block;
+}
+
 /*============================
 コンテンツ
 ============================*/

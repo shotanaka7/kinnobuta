@@ -288,3 +288,62 @@ QA
 	position: relative;
 	top: -0.05rem;
 }
+
+/*
+2025.8.27 追記
+*/
+#info .cont_wrap .ph_wrap {
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+}
+
+#info .cont_wrap .text_wrap {
+	width: 100%;
+	padding-left: 0;
+	margin-top: 0.3rem;
+}
+
+@media screen and (min-width: 600px) {
+	#info .cont_wrap .ph_wrap {
+		width: 4.2rem;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	#info .cont_wrap .text_wrap {
+		padding-left: 0.2rem;
+		width: calc(100% - 4.2rem);
+		margin-top: 0;
+	}
+}
+
+#point .point_wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+#point .point_wrap .ph_wrap {
+	width: 100%;
+}
+
+#point .point_wrap .text_wrap {
+	width: 100%;
+	padding-left: 0;
+	margin-top: 0.3rem;
+}
+
+@media screen and (min-width: 600px) {
+	#point .point_wrap {
+		flex-direction: row;
+	}
+
+	#point .point_wrap .ph_wrap {
+		width: 4.2rem;
+	}
+
+	#point .point_wrap .text_wrap {
+		width: calc(100% - 4.2rem);
+		padding-left: 0.2rem;
+	}
+}

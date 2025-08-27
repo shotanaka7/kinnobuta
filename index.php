@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="ja">
 
 <head>
 
@@ -18,7 +18,10 @@
 	<main>
 
 	<section id="mv">
-		<h1 class="lead"><img src="<?php echo get_template_directory_uri(); ?>/img/top/top_mv_lead.svg" alt="創業11年/買取実績16万点以上！買取査定額最大20%UP！サプリメント・MLM・コスメ化粧品の最高値買取"></h1>
+		<h1 class="lead">
+		<span class="screen-reader-text">創業11年/買取実績16万点以上！買取査定額最大20%UP！サプリメント・MLM・コスメ化粧品の最高値買取</span>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/top/top_mv_lead.svg" alt="">
+		</h1>
 	</section>
 
 	<div class="in">
