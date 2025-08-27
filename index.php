@@ -7,7 +7,6 @@
 	<title>KinnoButa-きんのぶた- - サプリメント・コスメの宅配買取ならきんのぶたへ！店頭でも買取OK！</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/top.css?=<?php echo date( 'YmdHi' ); ?>">
 
-
 </head>
 
 
@@ -17,12 +16,7 @@
 
 	<main>
 
-	<section id="mv">
-		<h1 class="lead">
-		<span class="screen-reader-text">創業11年/買取実績16万点以上！買取査定額最大20%UP！サプリメント・MLM・コスメ化粧品の最高値買取</span>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/top/top_mv_lead.svg" alt="">
-		</h1>
-	</section>
+	<?php get_template_part( 'inc/top-kv' ); ?>
 
 	<div class="in">
 		<section id="all_cont_wrapper">

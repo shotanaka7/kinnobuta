@@ -41,4 +41,5 @@
 <script src="<?php echo get_template_directory_uri(); ?>/common/slick/slick.js"></script>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css?=<?php echo date( 'YmdHi' ); ?>">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css?=<?php echo date( 'YmdHi' ); ?>">
 <?php wp_head(); ?>

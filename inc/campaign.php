@@ -5,9 +5,16 @@
 ?>
 
 <section id="campaign">
-	<h2 class="sec_title"><span>お得なキャンペーン開催中！</span></h2>
+	<h2 class="sec_title">
+	<span>
+		<!-- 今月の月を表示 -->
+		<?php
+		$current_month = date_i18n( 'n' );
+		?>
+		<span class="num"><?php echo $current_month; ?></span>月末までの<br class="sp">お得なキャンペーン開催中！
+	</span>
+	</h2>
 	<p class="lead">キャンペーン詳細ページよりご確認ください。</p>
-
 	<div class="campaign_slider_wrap">
 	<ul class="slider">
 		<?php

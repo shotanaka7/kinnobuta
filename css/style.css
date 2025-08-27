@@ -918,8 +918,8 @@ footer {
 	padding-bottom: 0.30rem;
 }
 
-.sec_title span {
-	font-size: 0.32rem;
+.sec_title span:not(.num) {
+	font-size: 0.3rem;
 	font-weight: bold;
 	line-height: 1;
 	text-align: center;
@@ -927,12 +927,32 @@ footer {
 	border-bottom: 3px solid #5fc1aa;
 }
 @media screen and (max-width: 599px) {
-	.sec_title span {
+	.sec_title span:not(.num) {
 		font-size: 0.2rem;
 		line-height: 1.7;
 	}
 }
 
+/*
+2025.8.27 追記
+*/
+br.sp {
+	display: none;
+}
+
+.sec_title .num {
+	font-size: 0.4rem;
+}
+
+@media screen and (max-width: 599px) {
+	br.sp {
+		display: inline-block;
+	}
+
+	.sec_title .num {
+		font-size: 0.3rem;
+	}
+}
 
 
 /* ボタン */

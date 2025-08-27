@@ -1,0 +1,30 @@
+@use "sass:math";
+@use "sass:map";
+
+// 小数点n桁で丸め
+@function roundN($number, $digits: 2) {
+  $pow: math.pow(10, $digits);
+  @return math.div(math.round($number * $pow), $pow);
+}
+
+// breakpoints
+$breakpoints: (
+  "sm": 351px,
+  "md": 600px,
+  "lg": 800px,
+  "xl": 1401px,
+) !default;
+
+@mixin mq($breakpoint: "md") {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+// line-height
+@mixin lh($font-size, $line-height) {
+  $ratio: math.div($line-height, $font-size); // 単位相殺→単位なし
+  line-height: roundN($ratio, 2);
+}
