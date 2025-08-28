@@ -5,19 +5,19 @@
 ?>
 
 <section id="campaign">
-	<h2 class="sec_title lg">
-	<span>
-		<!-- 今月の月を表示 -->
-		<?php
+  <h2 class="sec_title lg">
+    <span>
+      <!-- 今月の月を表示 -->
+      <?php
 		$current_month = date_i18n( 'n' );
 		?>
-		<span class="num"><?php echo $current_month; ?></span>月末までのお得な<br class="sp">キャンペーン開催中！
-	</span>
-	</h2>
-	<p class="lead">キャンペーン詳細ページよりご確認ください。</p>
-	<div class="campaign_slider_wrap">
-	<ul class="slider">
-		<?php
+      <span class="num"><?php echo $current_month; ?></span>月末までのお得な<br class="sp">キャンペーン開催中！
+    </span>
+  </h2>
+  <p class="lead">キャンペーン詳細ページよりご確認ください。</p>
+  <div class="campaign_slider_wrap">
+    <ul class="slider">
+      <?php
 		$category  = get_the_category();
 		$cat_slug  = $category[0]->category_nicename;
 		$paged     = (int) get_query_var( 'paged' );
@@ -35,17 +35,23 @@
 			while ( $the_query->have_posts() ) :
 				$the_query->the_post();
 				?>
-		<li class="slide">
-		<a href="<?php the_permalink(); ?>">
-			<div class="img_wrap"><?php the_post_thumbnail(); ?></div>
-		</a>
-		</li>
-				<?php
+      <li class="slide">
+        <?php
+            $link = get_the_permalink();
+            if ( get_field( 'pickup_link' ) ) {
+                $link = home_url() . get_field( 'pickup_link' );
+            }
+            ?>
+        <a href="<?php echo esc_url( $link ); ?>">
+          <div class="img_wrap"><?php the_post_thumbnail(); ?></div>
+        </a>
+      </li>
+      <?php
 		endwhile;
 		endif;
 		wp_reset_postdata();
 		?>
-	</ul>
-	<!-- /キャンペーン -->
-	</div>
+    </ul>
+    <!-- /キャンペーン -->
+  </div>
 </section>
