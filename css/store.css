@@ -28,7 +28,7 @@ MV
 	width: 100%;
 	max-width: 4.70rem;
 	border-radius: 0.10rem;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 @media screen and (max-width: 599px) {
 	#introduction .intro_upperbox .ph_wrap {
