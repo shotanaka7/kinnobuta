@@ -5,13 +5,13 @@
 ?>
 
 <section id="campaign">
-	<h2 class="sec_title">
+	<h2 class="sec_title lg">
 	<span>
 		<!-- 今月の月を表示 -->
 		<?php
 		$current_month = date_i18n( 'n' );
 		?>
-		<span class="num"><?php echo $current_month; ?></span>月末までの<br class="sp">お得なキャンペーン開催中！
+		<span class="num"><?php echo $current_month; ?></span>月末までのお得な<br class="sp">キャンペーン開催中！
 	</span>
 	</h2>
 	<p class="lead">キャンペーン詳細ページよりご確認ください。</p>

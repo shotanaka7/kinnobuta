@@ -6,14 +6,19 @@
 
 <div class="top-kv">
 	<div class="top-kv-bg">
-	<img src="<?php echo imgDir(); ?>/top/kv.jpg" alt="">
+	<picture>
+		<source media="(min-width: 600px)" srcset="<?php echo imgDir(); ?>/top/kv.jpg">
+		<img src="<?php echo imgDir(); ?>/top/kv-sp.jpg" alt="">
+	</picture>
 	</div>
 	<div class="top-kv-body">
 	<div class="top-kv-in">
-		<p class="top-kv-sub">専門店だからこその<span class="yellow"><br class="sp">業界最高級</span>の<span class="yellow">買取価格</span></p>
+		<div class="top-kv-sub-wrap">
+		<p class="top-kv-sub">専門店だからこその<span class="yellow">業界最高級</span>の<span class="yellow">買取価格</span></p>
+		</div>
 		<h1 class="top-kv-main">
 		<span class="screen-reader-text">きんのぶた - </span>
-		<span class="top-kv-ttl">MLM/サプリ/<br>健康食品の<br>買取に強い<span class="yellow">専門店</span></span>
+		<span class="top-kv-ttl">MLM/サプリ/<br class="pc">健康食品の<br>買取に強い<span class="yellow">専門店</span></span>
 		</h1>
 		<ul class="top-kv-labels">
 		<li class="top-kv-label">

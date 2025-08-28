@@ -940,9 +940,16 @@ footer {
 br.sp {
 	display: none;
 }
+br.pc {
+	display: inline-block;
+}
 
 .sec_title .num {
 	font-size: 0.4rem;
+}
+
+.sec_title.lg span:not(.num) {
+	font-size: 0.3rem;
 }
 
 @media screen and (max-width: 599px) {
@@ -950,8 +957,16 @@ br.sp {
 		display: inline-block;
 	}
 
+	br.pc {
+		display: none;
+	}
+
 	.sec_title .num {
-		font-size: 0.3rem;
+		font-size: 0.35rem;
+	}
+
+	.sec_title.lg span:not(.num) {
+		font-size: 0.25rem;
 	}
 }
 
