@@ -4,6 +4,12 @@
 .top-kv {
   position: relative;
 
+  &-wrap {
+    @include mq() {
+      padding: 0 30px;
+    }
+  }
+
   &-bg {
     overflow: hidden;
     position: relative;
@@ -57,15 +63,20 @@
   &-sub {
     background: $green;
     color: $white;
-    display: inline-block;
-    padding: 12px 10px;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
     font-weight: 700;
     letter-spacing: 0.05em;
-    font-size: clamp(13px, 4vw, 18px);
+    font-size: clamp(13px, 3.6vw, 18px);
     line-height: 1.2;
 
     @include mq() {
-      font-size: 25px;
+      display: inline-block;
+      width: auto;
+      padding: 12px 10px;
+      font-size: 24px;
     }
 
     &-wrap {
@@ -83,11 +94,13 @@
     font-weight: 700;
     @include lh(65, 88);
     margin-top: 10px;
-    font-size: clamp(22px, 7.5vw, 35px);
+    font-size: clamp(25px, 7.5vw, 35px);
     text-align: center;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-family: "Noto Sans JP", sans-serif;
 
     @include mq() {
-      font-size: 65px;
+      font-size: 47px;
       text-align: left;
     }
   }
@@ -159,6 +172,7 @@
 
       @include mq() {
         font-size: 30px;
+        margin-top: 9px;
       }
 
       &.md {
@@ -176,6 +190,7 @@
       color: $black;
 
       @include mq() {
+        margin-top: 4px;
         font-size: 16px;
       }
     }
@@ -197,6 +212,17 @@
     color: $pink;
   }
 
+  .marker {
+    background: linear-gradient(transparent 80%, $yellow 0%);
+    display: inline;
+    background-position: bottom 10px center;
+
+    // &.small {
+    //   background: linear-gradient(transparent 90%, $yellow 0%);
+    //   background-position: bottom 20px center;
+    // }
+  }
+
   .md {
     font-size: 20px;
     font-weight: 700;
@@ -213,6 +239,14 @@
 
     @include mq() {
       font-size: 60px;
+    }
+  }
+
+  .xl {
+    font-size: clamp(38px, 11vw, 50px);
+
+    @include mq() {
+      font-size: 65px;
     }
   }
 

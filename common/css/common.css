@@ -6,6 +6,7 @@ body {
 	zoom: 1;
 	/* Chromeバグ対策 */
 	overscroll-behavior: none;
+	min-width: 320px !important;
 }
 
 
