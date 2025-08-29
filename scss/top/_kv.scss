@@ -170,6 +170,7 @@
       letter-spacing: -0.02em;
       margin-top: 4px;
       display: flex;
+      justify-content: center;
 
       @include mq() {
         font-size: 30px;
