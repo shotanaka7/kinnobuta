@@ -36,6 +36,8 @@
       width: 100%;
       height: 100%;
       position: absolute;
+      top: 0;
+      left: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
 
       @include mq() {
@@ -263,7 +265,7 @@
 
     @include mq() {
       font-size: 16px;
-      transform: translateY(-5px) translateX(-0.8em);
+      transform: translateX(-0.8em);
     }
   }
 }
