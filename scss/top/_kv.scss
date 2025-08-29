@@ -236,6 +236,7 @@
   .lg {
     font-size: 35px;
     font-weight: 700;
+    white-space: nowrap;
 
     @include mq() {
       font-size: 58px;
