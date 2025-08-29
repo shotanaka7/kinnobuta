@@ -188,6 +188,7 @@
       font-size: 12px;
       font-weight: 700;
       color: $black;
+      margin-top: 2px;
 
       @include mq() {
         margin-top: 4px;

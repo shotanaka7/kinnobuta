@@ -232,6 +232,7 @@
   font-size: 12px;
   font-weight: 700;
   color: #000;
+  margin-top: 2px;
 }
 @media (min-width: 600px) {
   .top-kv-label-bottom {
