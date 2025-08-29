@@ -217,6 +217,7 @@
     background: linear-gradient(transparent 80%, $yellow 0%);
     display: inline;
     background-position: bottom 10px center;
+    white-space: nowrap;
 
     // &.small {
     //   background: linear-gradient(transparent 90%, $yellow 0%);
@@ -237,7 +238,6 @@
   .lg {
     font-size: 35px;
     font-weight: 700;
-    white-space: nowrap;
 
     @include mq() {
       font-size: 58px;
