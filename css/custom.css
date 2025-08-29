@@ -259,7 +259,6 @@
   background: linear-gradient(transparent 80%, #fffb00 0%);
   display: inline;
   background-position: bottom 10px center;
-  white-space: nowrap;
 }
 .top-kv .md {
   font-size: 20px;
@@ -272,7 +271,7 @@
   }
 }
 .top-kv .lg {
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 700;
 }
 @media (min-width: 600px) {
