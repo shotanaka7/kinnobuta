@@ -46,6 +46,7 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(22.54%, rgba(0, 0, 0, 0.5)), color-stop(54.96%, rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
+  z-index: 1;
 }
 @media (min-width: 600px) {
   .top-kv-bg::before {
@@ -60,6 +61,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 .top-kv-in {
   padding: 30px 20px;
