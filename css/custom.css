@@ -114,19 +114,12 @@
   text-align: center;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   font-family: "Noto Sans JP", sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media (min-width: 600px) {
   .top-kv-main {
     font-size: 47px;
     text-align: left;
   }
-}
-.top-kv-main.md {
-  display: block;
 }
 .top-kv-labels {
   display: -webkit-box;
@@ -220,6 +213,10 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-top: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (min-width: 600px) {
   .top-kv-label-main {
@@ -229,6 +226,7 @@
 }
 .top-kv-label-main.md {
   margin-top: 0;
+  display: block;
 }
 @media (min-width: 600px) {
   .top-kv-label-main.md {
