@@ -113,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: calc(10 / 390 * 100vw);
     margin-top: 20px;
 
     @include mq() {
@@ -126,7 +126,7 @@
     background-image: url("../img/top/kv-label.svg");
     background-size: contain;
     aspect-ratio: 1 / 1;
-    width: 100px;
+    width: calc(110 / 390 * 100vw);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,8 +137,8 @@
     }
 
     &-top {
-      padding-top: 20px;
-      font-size: clamp(10px, 3vw, 12px);
+      padding-top: calc(20 / 390 * 100vw);
+      font-size: calc(12 / 390 * 100vw);
       @include lh(16, 25);
       font-weight: 700;
       color: $black;
@@ -167,12 +167,11 @@
     }
 
     &-main {
-      margin-top: 4px;
-      font-size: 16px;
+      margin-top: calc(1 / 390 * 100vw);
+      font-size: calc(21 / 390 * 100vw);
       color: $green;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-top: 4px;
       display: flex;
       justify-content: center;
 
@@ -182,8 +181,8 @@
       }
 
       &.md {
-        margin-top: 0;
         display: block;
+        line-height: 1.1;
 
         @include mq() {
           margin-top: -2px;
@@ -192,7 +191,7 @@
     }
 
     &-bottom {
-      font-size: 12px;
+      font-size: calc(12 / 390 * 100vw);
       font-weight: 700;
       color: $black;
       margin-top: 2px;
@@ -232,9 +231,9 @@
   }
 
   .md {
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
     @include lh(35, 40);
+    font-size: calc(25 / 390 * 100vw);
 
     @include mq() {
       font-size: 35px;
@@ -242,7 +241,7 @@
   }
 
   .lg {
-    font-size: 32px;
+    font-size: calc(44 / 390 * 100vw);
     font-weight: 700;
 
     @include mq() {
@@ -261,7 +260,7 @@
   .vertical {
     writing-mode: vertical-rl;
     line-height: 1.2;
-    font-size: 12px;
+    font-size: calc(12 / 390 * 100vw);
     color: $black;
     transform: translateY(-2px) translateX(-0.8em);
 

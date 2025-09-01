@@ -138,7 +138,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 2.5641025641vw;
   margin-top: 20px;
 }
 @media (min-width: 600px) {
@@ -154,7 +154,7 @@
   background-image: url("../img/top/kv-label.svg");
   background-size: contain;
   aspect-ratio: 1/1;
-  width: 100px;
+  width: 28.2051282051vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -176,8 +176,8 @@
   }
 }
 .top-kv-label-top {
-  padding-top: 20px;
-  font-size: clamp(10px, 3vw, 12px);
+  padding-top: 5.1282051282vw;
+  font-size: 3.0769230769vw;
   line-height: 1.56;
   font-weight: 700;
   color: #000;
@@ -211,12 +211,11 @@
   content: "/";
 }
 .top-kv-label-main {
-  margin-top: 4px;
-  font-size: 16px;
+  margin-top: 0.2564102564vw;
+  font-size: 5.3846153846vw;
   color: #5ec1aa;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-top: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -233,8 +232,8 @@
   }
 }
 .top-kv-label-main.md {
-  margin-top: 0;
   display: block;
+  line-height: 1.1;
 }
 @media (min-width: 600px) {
   .top-kv-label-main.md {
@@ -242,7 +241,7 @@
   }
 }
 .top-kv-label-bottom {
-  font-size: 12px;
+  font-size: 3.0769230769vw;
   font-weight: 700;
   color: #000;
   margin-top: 2px;
@@ -274,9 +273,9 @@
   background-position: bottom 10px center;
 }
 .top-kv .md {
-  font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.14;
+  font-size: 6.4102564103vw;
 }
 @media (min-width: 600px) {
   .top-kv .md {
@@ -284,7 +283,7 @@
   }
 }
 .top-kv .lg {
-  font-size: 32px;
+  font-size: 11.2820512821vw;
   font-weight: 700;
 }
 @media (min-width: 600px) {
@@ -305,7 +304,7 @@
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   line-height: 1.2;
-  font-size: 12px;
+  font-size: 3.0769230769vw;
   color: #000;
   -webkit-transform: translateY(-2px) translateX(-0.8em);
           transform: translateY(-2px) translateX(-0.8em);
