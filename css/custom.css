@@ -14,7 +14,7 @@
 .top-kv-bg {
   overflow: hidden;
   position: relative;
-  height: 480px;
+  height: 124.358974359vw;
 }
 @media (min-width: 600px) {
   .top-kv-bg {
