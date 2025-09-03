@@ -113,8 +113,7 @@ MV
 	width: 100%;
 	border-collapse:collapse;
 	border-top: 1px solid #5FC1AA;
-	/* font-size: 0.16rem; */
-	font-size: 0.15rem;
+	font-size: 0.16rem;
 	letter-spacing: 0.05em;
 }
 @media screen and (max-width: 599px) {
@@ -123,6 +122,7 @@ MV
 		table-layout: fixed;
 		word-break: break-all;
 		word-wrap: break-all;
+		font-size: 0.15rem;
 	}
 }
 
