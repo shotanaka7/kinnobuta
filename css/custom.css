@@ -48,14 +48,14 @@
   background: linear-gradient(180deg, #1a2c17 25%, rgba(0, 0, 0, 0) 65%);
   mix-blend-mode: multiply;
   z-index: 1;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 @media (min-width: 600px) {
   .top-kv-bg::before {
     background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1a2c17), color-stop(55%, rgba(0, 0, 0, 0)));
     background: -webkit-linear-gradient(left, #1a2c17 23%, rgba(0, 0, 0, 0) 55%);
     background: linear-gradient(90deg, #1a2c17 23%, rgba(0, 0, 0, 0) 55%);
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }
 .top-kv-body {
@@ -288,6 +288,7 @@
   background: -webkit-gradient(linear, left top, right top, from(#ff9500), color-stop(19.23%, #ebe700), color-stop(50.48%, #e4ad07), color-stop(74.52%, #ebe700), to(#d29a00));
   background: -webkit-linear-gradient(left, #ff9500 0%, #ebe700 19.23%, #e4ad07 50.48%, #ebe700 74.52%, #d29a00 100%);
   background: linear-gradient(90deg, #ff9500 0%, #ebe700 19.23%, #e4ad07 50.48%, #ebe700 74.52%, #d29a00 100%);
+  text-shadow: none;
 }
 @media (min-width: 600px) {
   .top-kv .gold-3 {
