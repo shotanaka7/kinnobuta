@@ -43,16 +43,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(22.54%, rgba(0, 0, 0, 0.5)), color-stop(54.96%, rgba(0, 0, 0, 0)));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #1a2c17), color-stop(65%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, #1a2c17 25%, rgba(0, 0, 0, 0) 65%);
+  background: linear-gradient(180deg, #1a2c17 25%, rgba(0, 0, 0, 0) 65%);
+  mix-blend-mode: multiply;
   z-index: 1;
+  opacity: 0.7;
 }
 @media (min-width: 600px) {
   .top-kv-bg::before {
-    background: -webkit-gradient(linear, left top, right top, color-stop(22.54%, rgba(0, 0, 0, 0.5)), color-stop(54.96%, rgba(0, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(23%, #1a2c17), color-stop(55%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, #1a2c17 23%, rgba(0, 0, 0, 0) 55%);
+    background: linear-gradient(90deg, #1a2c17 23%, rgba(0, 0, 0, 0) 55%);
+    opacity: 0.6;
   }
 }
 .top-kv-body {
@@ -64,7 +67,7 @@
   z-index: 2;
 }
 .top-kv-in {
-  padding: 30px 20px;
+  padding: 30px 10px;
 }
 @media (min-width: 600px) {
   .top-kv-in {
@@ -72,15 +75,15 @@
   }
 }
 .top-kv-sub {
-  background: #5ec1aa;
+  background: #21a687;
   color: #fff;
   display: block;
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 12px 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-size: clamp(13px, 3.6vw, 18px);
+  font-size: 4.1025641026vw;
   line-height: 1.2;
 }
 @media (min-width: 600px) {
@@ -111,17 +114,17 @@
 }
 .top-kv-main {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.35;
   margin-top: 10px;
-  font-size: clamp(25px, 7.5vw, 35px);
+  font-size: 8.2051282051vw;
   text-align: center;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   font-family: "Noto Sans JP", sans-serif;
 }
 @media (min-width: 600px) {
   .top-kv-main {
-    font-size: 47px;
+    font-size: 46px;
     text-align: left;
   }
 }
@@ -259,8 +262,37 @@
   margin-right: 0.03em;
   margin-left: -0.2em;
 }
-.top-kv .yellow {
-  color: #fffb00;
+.top-kv .gold-1, .top-kv .gold-2, .top-kv .gold-3 {
+  color: #fff;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  display: inline-block;
+}
+.top-kv .gold-1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(36.54%, #ffbf00), color-stop(45.1%, #ffbf00), color-stop(63.95%, #ffe800));
+  background: -webkit-linear-gradient(left, #ffbf00 36.54%, #ffbf00 45.1%, #ffe800 63.95%);
+  background: linear-gradient(90deg, #ffbf00 36.54%, #ffbf00 45.1%, #ffe800 63.95%);
+}
+.top-kv .gold-2 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40.86%, #fef401), color-stop(47.35%, #ffe500), color-stop(59.33%, #ffc701));
+  background: -webkit-linear-gradient(left, #fef401 40.86%, #ffe500 47.35%, #ffc701 59.33%);
+  background: linear-gradient(90deg, #fef401 40.86%, #ffe500 47.35%, #ffc701 59.33%);
+}
+.top-kv .gold-3 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  font-size: 8.9743589744vw;
+  background: -webkit-gradient(linear, left top, right top, from(#ff9500), color-stop(19.23%, #ebe700), color-stop(50.48%, #e4ad07), color-stop(74.52%, #ebe700), to(#d29a00));
+  background: -webkit-linear-gradient(left, #ff9500 0%, #ebe700 19.23%, #e4ad07 50.48%, #ebe700 74.52%, #d29a00 100%);
+  background: linear-gradient(90deg, #ff9500 0%, #ebe700 19.23%, #e4ad07 50.48%, #ebe700 74.52%, #d29a00 100%);
+}
+@media (min-width: 600px) {
+  .top-kv .gold-3 {
+    font-size: 50px;
+  }
 }
 .top-kv .pink {
   color: #e86573;
@@ -271,6 +303,14 @@
   background: linear-gradient(transparent 80%, #fffb00 0%);
   display: inline;
   background-position: bottom 10px center;
+}
+.top-kv .sm {
+  font-size: 7.1794871795vw;
+}
+@media (min-width: 600px) {
+  .top-kv .sm {
+    font-size: 40px;
+  }
 }
 .top-kv .md {
   font-weight: 800;
@@ -292,7 +332,9 @@
   }
 }
 .top-kv .xl {
-  font-size: clamp(38px, 11vw, 50px);
+  font-size: 12.8205128205vw;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
 }
 @media (min-width: 600px) {
   .top-kv .xl {

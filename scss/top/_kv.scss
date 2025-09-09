@@ -38,11 +38,14 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
+      background: linear-gradient(180deg, rgba(#1a2c17, 1) 25%, rgba(0, 0, 0, 0) 65%);
+      mix-blend-mode: multiply;
       z-index: 1;
+      opacity: 0.7;
 
       @include mq() {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 22.54%, rgba(0, 0, 0, 0) 54.96%);
+        background: linear-gradient(90deg, rgba(#1a2c17, 1) 23%, rgba(0, 0, 0, 0) 55%);
+        opacity: 0.6;
       }
     }
   }
@@ -57,7 +60,7 @@
   }
 
   &-in {
-    padding: 30px 20px;
+    padding: 30px 10px;
 
     @include mq() {
       padding: 50px 30px;
@@ -65,15 +68,15 @@
   }
 
   &-sub {
-    background: $green;
+    background: $darkgreen;
     color: $white;
     display: block;
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 12px 0;
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.05em;
-    font-size: clamp(13px, 3.6vw, 18px);
+    font-size: calc(16 / 390 * 100vw);
     line-height: 1.2;
 
     @include mq() {
@@ -95,16 +98,16 @@
 
   &-main {
     color: $white;
-    font-weight: 700;
+    font-weight: 500;
     @include lh(65, 88);
     margin-top: 10px;
-    font-size: clamp(25px, 7.5vw, 35px);
+    font-size: calc(32 / 390 * 100vw);
     text-align: center;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     font-family: "Noto Sans JP", sans-serif;
 
     @include mq() {
-      font-size: 47px;
+      font-size: 46px;
       text-align: left;
     }
   }
@@ -211,8 +214,37 @@
     margin-left: -0.2em;
   }
 
-  .yellow {
-    color: $yellow;
+  .gold {
+    &-1,
+    &-2,
+    &-3 {
+      color: $white;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      text-fill-color: transparent !important;
+      display: inline-block;
+    }
+
+    &-1 {
+      background: linear-gradient(90deg, #ffbf00 36.54%, #ffbf00 45.1%, #ffe800 63.95%);
+    }
+
+    &-2 {
+      background: linear-gradient(90deg, #fef401 40.86%, #ffe500 47.35%, #ffc701 59.33%);
+    }
+
+    &-3 {
+      font-family: "Noto Serif JP", serif;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      font-size: calc(35 / 390 * 100vw);
+      background: linear-gradient(90deg, #ff9500 0%, #ebe700 19.23%, #e4ad07 50.48%, #ebe700 74.52%, #d29a00 100%);
+
+      @include mq() {
+        font-size: 50px;
+      }
+    }
   }
 
   .pink {
@@ -228,6 +260,14 @@
     //   background: linear-gradient(transparent 90%, $yellow 0%);
     //   background-position: bottom 20px center;
     // }
+  }
+
+  .sm {
+    font-size: calc(28 / 390 * 100vw);
+
+    @include mq() {
+      font-size: 40px;
+    }
   }
 
   .md {
@@ -250,7 +290,9 @@
   }
 
   .xl {
-    font-size: clamp(38px, 11vw, 50px);
+    font-size: calc(50 / 390 * 100vw);
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
 
     @include mq() {
       font-size: 65px;
