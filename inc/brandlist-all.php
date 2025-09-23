@@ -10,24 +10,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 15;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			15,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 
 		</ul>
 	</div>
@@ -38,25 +31,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 16;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			16,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -66,25 +51,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 19;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			19,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -94,25 +71,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 20;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			20,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -122,25 +91,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 21;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			21,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -150,25 +111,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 22;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			22,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -178,25 +131,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 23;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			23,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -206,25 +151,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 24;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			24,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -234,25 +171,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 25;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			25,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
@@ -262,25 +191,17 @@
 	<div class="cont">
 		<ul class="list">
 		<?php
-		$taxonomy_name = 'brand';
-		$term_id       = 26;
-		$termchildren  = get_term_children( $term_id, $taxonomy_name );
-		foreach ( $termchildren as $child ) :
-			?>
-			<?php
-			$term = get_term_by( 'id', $child, $taxonomy_name );
-			?>
-		<li class="item">
-			<a href="<?php echo get_term_link( $child, $taxonomy_name ); ?>">
-			<div class="ph_wrap">
-				<img src="<?php the_field( 'brand_img', $term ); ?>" alt="">
-			</div>
-			<div class="name"><?php echo $term->name; ?></div>
-
-			</a>
-		</li>
-		<?php endforeach; ?>
-
+		// 画像フィールドキーを変えたい場合は第5引数で指定可能（省略時 'brand_img'）
+		uxc_render_term_children_list(
+			26,
+			'brand',
+			true,
+			'card',
+			array(
+				'img_field' => 'brand_img',
+			)
+		);
+		?>
 		</ul>
 	</div>
 	</div>
