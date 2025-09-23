@@ -96,6 +96,17 @@ MV
 	line-height: 1.34;
 }
 
+.brand_list_wrap .list_box .item .ph_wrap {
+	aspect-ratio: 4 / 3;
+}
+
+.brand_list_wrap .list_box .item .ph_wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
 @media screen and (min-width: 768px) {
 	.brand_list_wrap .list_box .cont .list .item {
 		width: calc((100% - 6px * 3 )/ 4);

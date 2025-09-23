@@ -201,11 +201,11 @@ if ( ! function_exists( 'uxc_render_term_children_list' ) ) {
 				$img_url = uxc_get_acf_image_url( $term, $img_field );
 				$out    .= '<li class="item">';
 				$out    .= '<a href="' . esc_url( $link ) . '">';
-				$out    .= '<div class="ph_wrap" style="aspect-ratio:4/3;">';
+				$out    .= '<div class="ph_wrap">';
 				if ( $img_url !== '' ) {
-					$out .= '<img src="' . esc_url( $img_url ) . '" alt="' . esc_attr( $term->name ) . '" style="object-fit: cover; object-position: center;">';
+					$out .= '<img src="' . esc_url( $img_url ) . '" alt="' . esc_attr( $term->name ) . '">';
 				} else {
-					$out .= '<img src="https://placehold.co/400x300?text=No+Image" alt="" style="object-fit: cover; object-position: center;">';
+					$out .= '<img src="https://placehold.co/400x300?text=No+Image" alt="">';
 				}
 				$out .= '</div>';
 				$out .= '<div class="name">' . esc_html( $term->name ) . '</div>';
