@@ -131,6 +131,19 @@ MV
 	margin-bottom: 0.60rem;
 }
 
+#brand_detail .notfound {
+	width: 100%;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+#brand_detail .note {
+	font-size: 0.2rem;
+	font-weight: 700;
+	color: #E86573;
+	margin-bottom: 20px;
+}
+
 #brand_detail .brand_detail_wrap {
 	display: flex;
 	flex-wrap: wrap;

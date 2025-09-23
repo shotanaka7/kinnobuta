@@ -79,6 +79,14 @@
 				</div>
 				<?php endwhile; ?>
 					<?php wp_reset_postdata(); ?>
+				<?php else : ?>
+				<div class="notfound">
+				<p class="note">登録が見つかりませんでした。</p>
+				<div class="btn_common">
+					<a href="<?php echo home_url( 'contact' ); ?>"><span>お問い合わせ</span></a>
+				</div>
+				</div>
+
 				<?php endif; ?>
 
 
