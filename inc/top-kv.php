@@ -18,7 +18,7 @@
 			<p class="top-kv-sub">専門店だからこその<span class="gold-1">業界最高値級</span>の<span class="gold-2">買取価格</span></p>
 		</div>
 		<h1 class="top-kv-main">
-			<span class="top-kv-ttl">MLM/サプリ/健康食品<span class="sm">を</span><br><span class="gold-3">どこよりも高く売る</span><span class="sm">なら</span><br><span class="xl">”きんのぶた”</span></span>
+			<span class="top-kv-ttl">MLM/サプリ/健康食品/<br class="sp">化粧品/コスメ<span class="sm">を</span><br><span class="gold-3">どこよりも高く売る</span><span class="sm">なら</span><br><span class="xl">”きんのぶた”</span></span>
 		</h1>
 		<ul class="top-kv-labels">
 			<li class="top-kv-label">
