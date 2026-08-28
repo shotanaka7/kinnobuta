@@ -10,7 +10,7 @@
 	</div>
 	<h2 class="sec_title"><span>きんのぶたが選ばれる理由</span></h2>
 	</div>
-	<p class="lead">創業11年の実績による業界知識と繋がりからサプリメント・MLM・コスメ化粧品の買取において業界最大手の買取業者です。</p>
+	<p class="lead">創業<?php echo get_established_year(); ?>年の実績による業界知識と繋がりからサプリメント・MLM・コスメ化粧品の買取において業界最大手の買取業者です。</p>
 
 	<ul class="list">
 	<li class="item"><span>SPEED</span>
@@ -23,7 +23,7 @@
 		<h3>1点からでも買取対応</h3>
 	</li>
 	<li class="item"><span>SAFETY</span>
-		<h3>秘密厳守徹底で開業11年トラブルゼロ</h3>
+		<h3>秘密厳守徹底で開業<?php echo get_established_year(); ?>年トラブルゼロ</h3>
 	</li>
 	</ul>
 </section>
