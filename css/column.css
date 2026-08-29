@@ -79,6 +79,24 @@ MV
 .list_navi_wrap .wp-pagenavi {
     display: flex;
     justify-content: center;
+    /* ページ数が増えてもボタンが潰れず、幅が足りなければ折り返す */
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0.12rem;
+}
+
+.list_navi_wrap .wp-pagenavi > * {
+    flex-shrink: 0;
+}
+
+/* WP-PageNavi は「最初のページ→Prev→…→Next→最後のページ」の順に出力するため、
+   一般的なページャーの並び（Prev → 数字 → Next）になるよう並べ替える */
+.list_navi_wrap .wp-pagenavi .previouspostslink {
+    order: -1;
+}
+
+.list_navi_wrap .wp-pagenavi .nextpostslink {
+    order: 1;
 }
 
 .list_navi_wrap .wp-pagenavi .previouspostslink {
@@ -135,7 +153,9 @@ MV
     transition: all 0.3s;
 }
 
-.list_navi_wrap .wp-pagenavi .page {
+.list_navi_wrap .wp-pagenavi .page,
+.list_navi_wrap .wp-pagenavi .first,
+.list_navi_wrap .wp-pagenavi .last {
     display: block;
     font-size: 0.16rem;
     color: #5FC1AA;
@@ -158,4 +178,20 @@ MV
     background-color: #5FC1AA;
     border: 1px solid #5FC1AA;
     margin: 0 0.08rem;
+}
+
+/* ページ数が6以上になると出る「…」の区切り */
+.list_navi_wrap .wp-pagenavi .extend {
+    display: block;
+    font-size: 0.16rem;
+    color: #999;
+    line-height: 0;
+    padding: 0.24rem 0.04rem 0.26rem;
+    margin: 0 0.04rem;
+}
+
+/* 総ページ数テキストは category.php 側で pages_text を空にして出力を止めている。
+   万一 options の指定が外れた場合の保険として非表示にしておく */
+.list_navi_wrap .wp-pagenavi .pages {
+    display: none;
 }

@@ -74,6 +74,52 @@ add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 
 /*
+コラム一覧のページネーション
+============================================== */
+// コラム(column)カテゴリーアーカイブのメインクエリを10件/ページに固定
+function kinnobuta_column_posts_per_page( $query ) {
+	if ( ! is_admin() && $query->is_main_query() && $query->is_category( 'column' ) ) {
+		$query->set( 'posts_per_page', 10 );
+	}
+}
+add_action( 'pre_get_posts', 'kinnobuta_column_posts_per_page' );
+
+// /column/page/N/ をカテゴリーアーカイブへ解決させる
+// パーマリンク構造 /%category%/%post_id%/ が生成する投稿用規則
+// (.+?)/([0-9]+)/?$ に category_name=column/page & p=N として食われ404になるため、
+// 'top' 指定で先行評価させる。
+// 他カテゴリーで同様のページ送りが必要になったら規則を1行追加し、
+// kinnobuta_maybe_flush_rewrite_rules のバージョン番号を上げること。
+function kinnobuta_column_rewrite_rule() {
+	add_rewrite_rule(
+		'column/page/([0-9]+)/?$',
+		'index.php?category_name=column&paged=$matches[1]',
+		'top'
+	);
+}
+add_action( 'init', 'kinnobuta_column_rewrite_rule' );
+
+// リライト規則のバージョンが変わったら一度だけフラッシュ
+// （デプロイ時の「パーマリンク再保存」忘れ対策。init完了後の wp_loaded で実行し、
+// 他プラグインが init で登録する規則の取りこぼしを防ぐ）
+function kinnobuta_maybe_flush_rewrite_rules() {
+	if ( get_option( 'kinnobuta_rewrite_ver' ) !== '1' ) {
+		flush_rewrite_rules( false );
+		update_option( 'kinnobuta_rewrite_ver', '1' );
+	}
+}
+add_action( 'wp_loaded', 'kinnobuta_maybe_flush_rewrite_rules' );
+
+// WP-PageNavi 付属CSS(pagenavi-css.css)を無効化
+// （テーマ側 css/column.css / css/voice.css でページャーのスタイルを定義済み。
+// 付属CSSの .wp-pagenavi a { border } 等がテーマ未宣言プロパティに漏れるのを防ぐ）
+function kinnobuta_dequeue_pagenavi_css() {
+	wp_dequeue_style( 'wp-pagenavi' );
+}
+add_action( 'wp_enqueue_scripts', 'kinnobuta_dequeue_pagenavi_css', 20 );
+
+
+/*
 コメント欄カスタム
 ============================================== */
 // コメント文言を変更

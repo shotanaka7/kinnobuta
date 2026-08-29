@@ -41,61 +41,56 @@
 
 			<!-- コラム一覧 -->
 			<section id="cont">
-			<?php
-						$category      = get_the_category();
-						$cat_slug      = $category[0]->category_nicename;
-							$paged     = (int) get_query_var( 'paged' );
-							$args      = array(
-								'posts_per_page' => 3,
-								'paged'          => $paged,
-								'orderby'        => 'post_date',
-								'order'          => 'DESC',
-								'post_type'      => 'post',
-								'category_name'  => $cat_slug,
-								'post_status'    => 'publish',
-							);
-							$the_query = new WP_Query( $args );
-							if ( $the_query->have_posts() ) :
-								while ( $the_query->have_posts() ) :
-									$the_query->the_post();
-									?>
-			<div class="cont_wrap">
-				<div class="cont_box">
-				<div class="ph_wrap">
-									<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'medium' ); ?>
-					<?php else : ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/blog_normal_yoko.jpg" alt="デフォルト画像" />
-					<?php endif; ?>
-				</div>
-				<div class="text_wrap">
-					<h2 class="title"><?php the_title(); ?></h2>
-					<p class="text"><?php echo get_the_excerpt(); ?></p>
-					<div class="btn_mini_common">
-					<a href="<?php the_permalink(); ?>"><span>詳しく見る</span></a>
-					</div>
-				</div>
-				</div>
-									<?php
-				endwhile;
-							endif;
-							wp_reset_postdata();
+				<div class="cont_wrap">
+					<?php
+					if ( have_posts() ) :
+						while ( have_posts() ) :
+							the_post();
 							?>
-			</div>
-
-			<!-- ページャー -->
-			<div class="list_navi_wrap">
-				<!-- <div class="wp-pagenavi" role="navigation">
-								<a class="previouspostslink" rel="prev" aria-label="前のページ" href="">Prev</a>
-								<span aria-current="page" class="current">1</span>
-								<a class="page larger" title="ページ 2" href="">2</a>
-								<a class="page larger" title="ページ 3" href="">3</a>
-								<a class="page larger" title="ページ 4" href="">4</a>
-								<a class="page larger" title="ページ 5" href="https://miya-mari.net/event_list/page/5/">5</a>
-								<a class="nextpostslink" rel="next" aria-label="次のページ" href="https://miya-mari.net/event_list/page/2/">Next</a>
+					<div class="cont_box">
+						<div class="ph_wrap">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'medium' ); ?>
+							<?php else : ?>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/blog_normal_yoko.jpg" alt="デフォルト画像" />
+							<?php endif; ?>
+						</div>
+						<div class="text_wrap">
+							<h2 class="title"><?php the_title(); ?></h2>
+							<p class="text"><?php echo get_the_excerpt(); ?></p>
+							<div class="btn_mini_common">
+								<a href="<?php the_permalink(); ?>"><span>詳しく見る</span></a>
 							</div>
-						</div> -->
+						</div>
+					</div>
+							<?php
+						endwhile;
+					endif;
+					?>
+				</div>
+
 				<!-- ページャー -->
+				<div class="list_navi_wrap">
+					<?php
+					if ( function_exists( 'wp_pagenavi' ) ) {
+						// 表示文言はテーマ側で固定する（管理画面 設定→PageNavi の値に依存させない）。
+						// pages_text を空にすると「1 / 2ページ」の表示自体が出力されない。
+						// first_text / last_text はページ数が num_pages(既定5) を超えたときだけ出る。
+						wp_pagenavi(
+							array(
+								'options' => array(
+									'pages_text' => '',
+									'prev_text'  => 'Prev',
+									'next_text'  => 'Next',
+									'first_text' => '1',
+									'last_text'  => '%TOTAL_PAGES%',
+								),
+							)
+						);
+					}
+					?>
+				</div>
+				<!-- /ページャー -->
 			</section>
 			<!-- コラム一覧 -->
 
