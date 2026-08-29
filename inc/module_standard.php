@@ -18,10 +18,8 @@
 	<div class="pickup_jisseki_slider_wrap">
 	<ul class="pickup_jisseki_slider">
 		<?php
-			$paged     = (int) get_query_var( 'paged' );
 			$args      = array(
 				'posts_per_page' => 10,
-				'paged'          => $paged,
 				'orderby'        => 'post_date',
 				'order'          => 'DESC',
 				'post_type'      => 'top_kaitori',
