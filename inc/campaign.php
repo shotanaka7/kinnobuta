@@ -18,8 +18,6 @@
   <div class="campaign_slider_wrap">
     <ul class="slider">
       <?php
-		$category  = get_the_category();
-		$cat_slug  = $category[0]->category_nicename;
 		$paged     = (int) get_query_var( 'paged' );
 		$args      = array(
 			'posts_per_page' => 5,

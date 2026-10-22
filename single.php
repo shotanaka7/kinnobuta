@@ -4,6 +4,7 @@ $page_title    = 'お知らせ';
 $page_title_en = 'NEWS';
 $title_tag     = get_the_title();
 
+$cat_slug   = '';
 $categories = get_the_category();
 if ( ! empty( $categories ) ) {
 	$cat_slug = $categories[0]->slug;

@@ -53,8 +53,6 @@
 			<h2 class="sec_title"><span>最新情報</span></h2>
 			<ul class="list">
 				<?php
-							$category  = get_the_category();
-							$cat_slug  = $category[0]->category_nicename;
 							$paged     = (int) get_query_var( 'paged' );
 							$args      = array(
 								'posts_per_page' => 5,

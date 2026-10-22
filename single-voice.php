@@ -112,11 +112,6 @@
 			</div>
 			<!-- ページャー -->
 			<div class="news_page_navi_wrap">
-				<?php
-							$cat      = get_the_category();
-							$cat_slug = $cat[0]->slug;
-							$link     = get_category_link( $cat_id );
-				?>
 				<ul class="list">
 				<li class="link prev"><?php previous_post_link( '%link', '前の記事', false, 'uservoice' ); ?></li>
 				<li class="link home"><a href="<?php echo home_url( 'voice' ); ?>">一覧に戻る</a></li>
