@@ -9,6 +9,7 @@
 </section>
 <!-- /簡単なお取引方法はコチラ！ -->
 
+<?php if ( is_front_page() ) : ?>
 <!-- 買取実績 -->
 <section id="pickup_jisseki">
 
@@ -76,3 +77,4 @@
 	</div>
 </section>
 <!-- /インスタ -->
+<?php endif; ?>
